@@ -9,10 +9,9 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header banner with Back button and Hamburger Menu -->
+  <!-- Header banner with Hamburger Menu -->
   <div class="header-banner">
     <div class="container d-flex justify-content-between align-items-center">
-      <button class="back-button" onclick="goBack()" aria-label="Go back to the previous page">← Back</button>
       <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -95,7 +94,7 @@
     const city = 'Kuala Lumpur';
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-fetch(weatherUrl)
+    fetch(weatherUrl)
       .then(response => response.json())
       .then(data => {
         const weather = data.weather[0].description;
@@ -105,11 +104,6 @@ fetch(weatherUrl)
         `;
       })
       .catch(error => console.error('Error fetching weather:', error));
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-
+  </script>
 </body>
 </html>
