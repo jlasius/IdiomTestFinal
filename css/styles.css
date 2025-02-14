@@ -72,13 +72,33 @@ body {
   padding: 0; /* Remove default padding */
 }
 
+/* Hamburger Button Styling */
 .navbar-toggler {
-  border-color: #4a90e2; /* Match the banner blue */
+  border: 2px solid white; /* Add a white border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 0.5rem; /* Add padding for better clickability */
+  background-color: transparent; /* Transparent background */
   margin-left: auto; /* Push the hamburger button to the right */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
+/* Hamburger Icon Color */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%234a90e2' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 1.5em; /* Adjust icon size */
+  height: 1.5em;
+}
+
+/* Hover Effect for Hamburger Button */
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight white background on hover */
+  border-color: rgba(255, 255, 255, 0.8); /* Slightly lighter border on hover */
+}
+
+/* Focus Effect for Hamburger Button */
+.navbar-toggler:focus {
+  outline: 3px solid #1a73e8; /* Add a focus outline for accessibility */
+  outline-offset: 2px;
 }
 
 .navbar-collapse {
