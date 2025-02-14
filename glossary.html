@@ -9,5 +9,95 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Hamburger Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="malaysia.html">Things to Do in Malaysia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="glossary.html">Glossary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Skip to main content link -->
-  <a href="#
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header banner with Back button -->
+  <div class="header-banner">
+    <div class="container">
+      <button class="back-button" onclick="goBack()" aria-label="Go back to the previous page">← Back</button>
+    </div>
+  </div>
+
+  <main class="container mt-5" id="main-content">
+    <div class="text-center">
+      <h1>Glossary of Malay Idioms</h1>
+      <p class="lead">Explore all the idioms in one place.</p>
+    </div>
+
+    <div id="glossary"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Created by <strong>Julian L.</strong> &copy; 2025 |
+        <a href="mailto:your-email@example.com">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Load idioms from JSON and display them
+    fetch('js/idioms.json')
+      .then(response => response.json())
+      .then(data => {
+        const glossary = document.getElementById('glossary');
+        data.categories.forEach(category => {
+          const categorySection = document.createElement('div');
+          categorySection.innerHTML = `
+            <h2>${category.name}</h2>
+            <ul>
+              ${category.idioms.map(idiom => `
+                <li>
+                  <strong>${idiom.idiom}</strong>: ${idiom.translation}<br>
+                  <em>${idiom.explanation}</em><br>
+                  Example (BM): ${idiom.example.BM}<br>
+                  Example (English): ${idiom.example.English}
+                </li>
+              `).join('')}
+            </ul>
+          `;
+          glossary.appendChild(categorySection);
+        });
+      })
+      .catch(error => console.error('Error loading idioms:', error));
+  </script>
+  <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
