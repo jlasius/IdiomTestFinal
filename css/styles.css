@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
 #category-title {
   margin-bottom: 2rem; /* Increase for more space */
 }
@@ -36,15 +35,10 @@ body {
   padding: 1rem;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-.header-banner {
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensure it stays above other content */
 }
-
 
 /* Back button */
 .back-button {
@@ -62,7 +56,7 @@ body {
   color: #4a90e2;
 }
 
-/* MASCOT */
+/* Mascot */
 .mascot-image {
   width: 150px; /* Adjust size as needed */
   height: 150px;
@@ -72,55 +66,38 @@ body {
   margin-bottom: 1rem; /* Space below the mascot */
 }
 
-
 /* Custom Navbar Styles - Hamburger */
 .navbar {
   background-color: #4a90e2 !important; /* Match the header banner color */
+  padding: 0; /* Remove default padding */
 }
 
 .navbar-toggler {
-  border-color: white;
+  border-color: #4a90e2; /* Match the banner blue */
+  margin-left: auto; /* Push the hamburger button to the right */
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%234a90e2' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse {
+  justify-content: flex-end; /* Align menu items to the right */
+  background-color: #4a90e2; /* Match the banner blue */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 0.5rem; /* Add some padding */
 }
 
 .nav-link {
-  color: white !important;
+  color: white !important; /* White text for better contrast */
   font-weight: bold;
+  padding: 0.5rem 1rem; /* Add padding for better clickability */
 }
 
 .nav-link:hover {
-  color: #f8f9fa !important;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+  border-radius: 4px; /* Optional: Add rounded corners */
 }
-
-
-/* FURTHER Navbar formatting */
-
-/* Custom Navbar Styles */
-.navbar {
-  background-color: #4a90e2 !important; /* Match the header banner color */
-}
-
-.navbar-toggler {
-  border-color: white;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.nav-link {
-  color: white !important;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: #f8f9fa !important;
-}
-
-
 
 /* NEW Category Page Center the categories container and make it less wide */
 .categories-container {
@@ -192,7 +169,6 @@ body {
   margin-top: 1rem;
 }
 
-
 /* Ensure the body and html take up the full height of the page */
 html, body {
   height: 100%;
@@ -218,17 +194,6 @@ body {
   font-size: 0.9rem;
   color: #666;
   border-top: 1px solid #ddd; /* Subtle border at the top */
-}
-
-
-/* Footer styling */
-.footer {
-  background-color: #f8f9fa; /* Light background color */
-  padding: 1rem 0;
-  text-align: center; /* Center the text */
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd; /* Subtle border at the top */
   margin-top: 2rem; /* Space above the footer */
 }
 
@@ -240,9 +205,6 @@ body {
 .footer a:hover {
   text-decoration: underline; /* Underline on hover */
 }
-
-
-
 
 /* Skip link styles */
 .skip-link {
