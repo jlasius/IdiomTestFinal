@@ -276,3 +276,33 @@ body {
   background-color: #e9ecef;
   color: #000;
 }
+
+/* Ensure the navbar container doesn't shift when the menu is opened */
+.navbar {
+  position: relative; /* Ensure the navbar is positioned relative */
+}
+
+/* Fix the hamburger button to the right side of the screen */
+.navbar-toggler {
+  position: absolute; /* Position the button absolutely */
+  right: 1rem; /* Align to the right with some spacing */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 1001; /* Ensure it stays above other content */
+}
+
+/* Ensure the dropdown menu doesn't push the button */
+.navbar-collapse {
+  position: absolute; /* Position the dropdown absolutely */
+  right: 0; /* Align to the right */
+  top: 100%; /* Position below the button */
+  background-color: #4a90e2; /* Match the banner blue */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 0.5rem; /* Add some padding */
+  z-index: 1000; /* Ensure it stays below the button */
+}
+
+/* Ensure the navbar links are properly aligned */
+.navbar-nav {
+  margin-left: auto; /* Align links to the right */
+}
