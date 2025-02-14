@@ -95,10 +95,21 @@
     const city = 'Kuala Lumpur';
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-    fetch(weatherUrl)
+fetch(weatherUrl)
       .then(response => response.json())
       .then(data => {
         const weather = data.weather[0].description;
         const temp = data.main.temp;
         document.getElementById('weather').innerHTML = `
-          <p
+          <p>${weather}, ${temp}°C</p>
+        `;
+      })
+      .catch(error => console.error('Error fetching weather:', error));
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
