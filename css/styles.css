@@ -1,0 +1,247 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+
+#category-title {
+  margin-bottom: 2rem; /* Increase for more space */
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin-top: 2rem; /* Increase for more space */
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  border: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+/* Header banner */
+.header-banner {
+  background-color: #4a90e2; /* A nice blue color */
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.header-banner {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+
+/* Back button */
+.back-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: white;
+  color: #4a90e2;
+}
+
+/* MASCOT */
+.mascot-image {
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Egg shape */
+  object-fit: cover; /* Ensures the image fits nicely */
+  border: 3px solid #1a73e8; /* Optional: Add a border */
+  margin-bottom: 1rem; /* Space below the mascot */
+}
+
+
+/* NEW Category Page Center the categories container and make it less wide */
+.categories-container {
+  max-width: 600px; /* Adjust this value to control the width */
+  margin: 0 auto; /* Center the container */
+  padding: 1rem;
+}
+
+/* Style for each category link */
+.category-link {
+  display: block;
+  text-align: left; /* Left-align the text inside the box */
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #f8f9fa; /* Light background color */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark text color */
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for category links */
+.category-link:hover {
+  background-color: #e9ecef; /* Slightly darker background on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #000; /* Darker text on hover */
+}
+
+/* NEWWWW Center the original idiom */
+#idiom-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Left-align the translation, explanation, and examples */
+#translation-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Add some spacing between sections */
+#translation-text strong {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Ensure the card looks good on smaller screens */
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.btn {
+  margin: 0.5rem;
+}
+
+/* Instructional text styling */
+.instruction-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+
+/* Ensure the body and html take up the full height of the page */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout to push the footer to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area should grow to fill available space */
+.container {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 1rem 0;
+  text-align: center; /* Center the text */
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd; /* Subtle border at the top */
+}
+
+
+/* Footer styling */
+.footer {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 1rem 0;
+  text-align: center; /* Center the text */
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd; /* Subtle border at the top */
+  margin-top: 2rem; /* Space above the footer */
+}
+
+.footer a {
+  color: #4a90e2; /* Link color */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+/* Skip link styles */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  background-color: #1a73e8;
+  color: white;
+  text-align: center;
+}
+
+/* Focus styles for interactive elements */
+button:focus,
+a:focus,
+input:focus {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+/* Ensure sufficient color contrast */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header-banner {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.category-link {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.category-link:hover,
+.category-link:focus {
+  background-color: #e9ecef;
+  color: #000;
+}
