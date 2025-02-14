@@ -11,6 +11,34 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Hamburger Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="malaysia.html">Things to Do in Malaysia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="glossary.html">Glossary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Skip to main content link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -22,18 +50,15 @@
   </div>
 
   <!-- Main content -->
-
-<main class="container mt-5" id="main-content">
-  <div class="text-center">
-    <!-- Mascot Image -->
-    <img src="images/mascot.jpeg" alt="IdiomKu Mascot" class="mascot-image">
-    <h1>Welcome to IdiomKu!</h1>
-    <p class="lead">Learn Bahasa Malaysian idioms in a fun and engaging way.</p>
-    <a href="categories.html" class="btn btn-primary" aria-label="Start learning idioms">Start Learning</a>
-  </div>
-</main>
-
-
+  <main class="container mt-5" id="main-content">
+    <div class="text-center">
+      <!-- Mascot Image -->
+      <img src="images/mascot.jpeg" alt="IdiomKu Mascot" class="mascot-image">
+      <h1>Welcome to IdiomKu!</h1>
+      <p class="lead">Learn Bahasa Malaysian idioms in a fun and engaging way.</p>
+      <a href="categories.html" class="btn btn-primary" aria-label="Start learning idioms">Start Learning</a>
+    </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
@@ -44,5 +69,7 @@
       </p>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
