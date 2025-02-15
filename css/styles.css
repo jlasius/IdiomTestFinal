@@ -388,4 +388,74 @@ input:focus {
   .instruction-text {
     color: #ccc; /* Ensure instructional text is visible in dark mode */
   }
+
+
+
+
+/* GLOSSARY -- see if this works! Add this to your styles.css file */
+
+/* Glossary Section Styling */
+#glossary {
+  margin-top: 2rem;
+}
+
+#glossary h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #4a90e2; /* You can change the color to match your theme */
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.5rem;
+}
+
+#glossary ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#glossary li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#glossary li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#glossary li strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#glossary li em {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-style: italic;
+}
+
+#glossary li br {
+  margin-bottom: 0.5rem;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  #glossary li {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
+
+  #glossary li strong {
+    color: #e0e0e0;
+  }
+
+  #glossary li em {
+    color: #ccc;
+  }
+
 }
