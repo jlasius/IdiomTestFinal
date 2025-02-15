@@ -1,24 +1,41 @@
 /* Light mode styles (default) */
 body {
   background-color: #f4f4f4;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Revert to a more neutral font */
   color: #333;
 }
 
 #category-title {
   margin-bottom: 2rem;
+  font-size: 2rem; /* Slightly larger but not too big */
+  font-weight: bold;
+  color: #4a90e2; /* Theme color */
 }
 
 .card {
   background-color: #fff;
   border: 2px solid #333;
-  border-radius: 10px;
+  border-radius: 10px; /* Revert to original rounded corners */
   margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
 }
 
 .btn-primary {
   background-color: #4a90e2;
   border: none;
+  padding: 0.5rem 1rem; /* Revert to original button size */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #357abd; /* Darker shade on hover */
 }
 
 .btn-success {
@@ -141,26 +158,29 @@ body {
 
 #idiom-text {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Revert to original size */
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #1a73e8; /* Theme color */
 }
 
 #translation-text {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1rem; /* Revert to original size */
   line-height: 1.6;
+  color: #555; /* Slightly darker text for better readability */
 }
 
 #translation-text strong {
   display: block;
   margin-top: 0.5rem;
+  color: #333; /* Darker text for emphasis */
 }
 
 .card {
   max-width: 500px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem; /* Revert to original padding */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -243,7 +263,7 @@ input:focus {
 
   .card {
     background-color: #1e1e1e;
-    border-color: #333;
+    border-color: #444; /* Slightly lighter border for better visibility */
     color: #e0e0e0; /* Ensure text color is visible in dark mode */
   }
 
@@ -353,72 +373,19 @@ input:focus {
     color: #e0e0e0; /* Ensure text inside flashcards is visible */
   }
 
+  #idiom-text {
+    color: #e0e0e0; /* Ensure idiom text is bright in dark mode */
+  }
+
+  #translation-text {
+    color: #ccc; /* Slightly lighter text for better readability in dark mode */
+  }
+
+  #translation-text strong {
+    color: #e0e0e0; /* Ensure strong text is bright in dark mode */
+  }
+
   .instruction-text {
-    color: #e0e0e0; /* Ensure instructional text is visible */
-  }
-}
-
-/* Glossary Section Styling */
-#glossary {
-  margin-top: 2rem;
-}
-
-#glossary h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: #4a90e2; /* You can change the color to match your theme */
-  border-bottom: 2px solid #4a90e2;
-  padding-bottom: 0.5rem;
-}
-
-#glossary ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#glossary li {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#glossary li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#glossary li strong {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-#glossary li em {
-  display: block;
-  margin-top: 0.5rem;
-  color: #666;
-  font-style: italic;
-}
-
-#glossary li br {
-  margin-bottom: 0.5rem;
-}
-
-/* Dark mode adjustments for Glossary */
-@media (prefers-color-scheme: dark) {
-  #glossary li {
-    background-color: #1e1e1e;
-    border-color: #333;
-  }
-
-  #glossary li strong {
-    color: #e0e0e0;
-  }
-
-  #glossary li em {
-    color: #ccc;
+    color: #ccc; /* Ensure instructional text is visible in dark mode */
   }
 }
