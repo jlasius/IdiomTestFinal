@@ -1,41 +1,41 @@
 /* Light mode styles (default) */
 body {
   background-color: #f4f4f4;
-  font-family: Arial, sans-serif; /* Revert to a more neutral font */
+  font-family: Arial, sans-serif;
   color: #333;
 }
 
 #category-title {
   margin-bottom: 2rem;
-  font-size: 2rem; /* Slightly larger but not too big */
+  font-size: 2rem;
   font-weight: bold;
-  color: #4a90e2; /* Theme color */
+  color: #4a90e2;
 }
 
 .card {
   background-color: #fff;
   border: 2px solid #333;
-  border-radius: 10px; /* Revert to original rounded corners */
+  border-radius: 10px;
   margin-top: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary {
   background-color: #4a90e2;
   border: none;
-  padding: 0.5rem 1rem; /* Revert to original button size */
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #357abd; /* Darker shade on hover */
+  background-color: #357abd;
 }
 
 .btn-success {
@@ -158,29 +158,29 @@ body {
 
 #idiom-text {
   text-align: center;
-  font-size: 1.5rem; /* Revert to original size */
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #1a73e8; /* Theme color */
+  color: #1a73e8;
 }
 
 #translation-text {
   text-align: left;
-  font-size: 1rem; /* Revert to original size */
+  font-size: 1rem;
   line-height: 1.6;
-  color: #555; /* Slightly darker text for better readability */
+  color: #555;
 }
 
 #translation-text strong {
   display: block;
   margin-top: 0.5rem;
-  color: #333; /* Darker text for emphasis */
+  color: #333;
 }
 
 .card {
   max-width: 500px;
   margin: 0 auto;
-  padding: 1rem; /* Revert to original padding */
+  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -263,8 +263,8 @@ input:focus {
 
   .card {
     background-color: #1e1e1e;
-    border-color: #444; /* Slightly lighter border for better visibility */
-    color: #e0e0e0; /* Ensure text color is visible in dark mode */
+    border-color: #444;
+    color: #e0e0e0;
   }
 
   .btn-primary {
@@ -367,126 +367,124 @@ input:focus {
     outline-color: #1a73e8;
   }
 
-  /* Flashcard-specific dark mode styles */
   .card-title,
   .card-text {
-    color: #e0e0e0; /* Ensure text inside flashcards is visible */
+    color: #e0e0e0;
   }
 
   #idiom-text {
-    color: #e0e0e0; /* Ensure idiom text is bright in dark mode */
+    color: #e0e0e0;
   }
 
   #translation-text {
-    color: #ccc; /* Slightly lighter text for better readability in dark mode */
+    color: #ccc;
   }
 
   #translation-text strong {
-    color: #e0e0e0; /* Ensure strong text is bright in dark mode */
+    color: #e0e0e0;
   }
 
   .instruction-text {
-    color: #ccc; /* Ensure instructional text is visible in dark mode */
+    color: #ccc;
   }
+}
 
-
-
-  /* NEWWW 11:48 Glossary-specific styles */
+/* Glossary-specific styles */
 .glossary-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
 }
 
 .category-section {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .category-section h2 {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #4a90e2; /* Theme color */
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #4a90e2;
-    padding-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.5rem;
 }
 
 .category-section ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .category-section li {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category-section li:hover {
-    background-color: #e9ecef;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category-section li strong {
-    font-size: 1.25rem;
-    color: #1a73e8; /* Theme color */
-    display: block;
-    margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #1a73e8;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .category-section li em {
-    display: block;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 0.5rem;
+  display: block;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
 }
 
 .category-section li .example {
-    display: block;
-    color: #666;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 /* Dark mode styles for glossary */
 @media (prefers-color-scheme: dark) {
-    .glossary-container {
-        background-color: #1e1e1e;
-        border-color: #444;
-        color: #e0e0e0;
-    }
+  .glossary-container {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
 
-    .category-section h2 {
-        color: #1a73e8; /* Theme color */
-        border-bottom-color: #1a73e8;
-    }
+  .category-section h2 {
+    color: #1a73e8;
+    border-bottom-color: #1a73e8;
+  }
 
-    .category-section li {
-        background-color: #2d2d2d;
-        border-color: #444;
-        color: #e0e0e0;
-    }
+  .category-section li {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
 
-    .category-section li:hover {
-        background-color: #3d3d3d;
-    }
+  .category-section li:hover {
+    background-color: #3d3d3d;
+  }
 
-    .category-section li strong {
-        color: #1a73e8; /* Theme color */
-    }
+  .category-section li strong {
+    color: #1a73e8;
+  }
 
-    .category-section li em {
-        color: #ccc;
-    }
+  .category-section li em {
+    color: #ccc;
+  }
 
-    .category-section li .example {
-        color: #999;
-    }
+  .category-section li .example {
+    color: #999;
+  }
 }
