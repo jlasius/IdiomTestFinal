@@ -1,20 +1,19 @@
+I don't want to add a toggle button for now.  Below is my current css. Can you make it aesthetically darkmode friendly?
+
 body {
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text color */
+  background-color: #f4f4f4;
   font-family: Arial, sans-serif;
 }
 
 #category-title {
   margin-bottom: 2rem; /* Increase for more space */
-  color: #ffffff; /* White text for better contrast */
 }
 
 .card {
-  background-color: #1e1e1e; /* Dark card background */
+  background-color: #fff;
   border: 2px solid #333;
   border-radius: 10px;
   margin-top: 2rem; /* Increase for more space */
-  color: #e0e0e0; /* Light text color */
 }
 
 .btn-primary {
@@ -34,7 +33,7 @@ body {
 
 /* Header banner */
 .header-banner {
-  background-color: #1a73e8; /* A nice blue color */
+  background-color: #4a90e2; /* A nice blue color */
   padding: 1rem;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -56,7 +55,7 @@ body {
 
 .back-button:hover {
   background-color: white;
-  color: #1a73e8;
+  color: #4a90e2;
 }
 
 /* Mascot */
@@ -71,7 +70,7 @@ body {
 
 /* Custom Navbar Styles - Hamburger */
 .navbar {
-  background-color: #1a73e8 !important; /* Match the header banner color */
+  background-color: #4a90e2 !important; /* Match the header banner color */
   padding: 0; /* Remove default padding */
 }
 
@@ -106,7 +105,7 @@ body {
 
 .navbar-collapse {
   justify-content: flex-end; /* Align menu items to the right */
-  background-color: #1a73e8; /* Match the banner blue */
+  background-color: #4a90e2; /* Match the banner blue */
   border-radius: 8px; /* Optional: Add rounded corners */
   padding: 0.5rem; /* Add some padding */
 }
@@ -135,5 +134,147 @@ body {
   text-align: left; /* Left-align the text inside the box */
   padding: 1rem;
   margin: 0.5rem 0;
-  background-color: #2d2d2d; /* Dark background color */
-  border: 1px solid #444; /* Dark border */
+  background-color: #f8f9fa; /* Light background color */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark text color */
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for category links */
+.category-link:hover {
+  background-color: #e9ecef; /* Slightly darker background on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #000; /* Darker text on hover */
+}
+
+/* NEWWWW Center the original idiom */
+#idiom-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Left-align the translation, explanation, and examples */
+#translation-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Add some spacing between sections */
+#translation-text strong {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Ensure the card looks good on smaller screens */
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.btn {
+  margin: 0.5rem;
+}
+
+/* Instructional text styling */
+.instruction-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Ensure the body and html take up the full height of the page */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout to push the footer to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area should grow to fill available space */
+.container {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 1rem 0;
+  text-align: center; /* Center the text */
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd; /* Subtle border at the top */
+  margin-top: 2rem; /* Space above the footer */
+}
+
+.footer a {
+  color: #4a90e2; /* Link color */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Skip link styles */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  background-color: #1a73e8;
+  color: white;
+  text-align: center;
+}
+
+/* Focus styles for interactive elements */
+button:focus,
+a:focus,
+input:focus {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+/* Ensure sufficient color contrast */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header-banner {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.category-link {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.category-link:hover,
+.category-link:focus {
+  background-color: #e9ecef;
+  color: #000;
+}
