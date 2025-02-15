@@ -244,6 +244,7 @@ input:focus {
   .card {
     background-color: #1e1e1e;
     border-color: #333;
+    color: #e0e0e0; /* Ensure text color is visible in dark mode */
   }
 
   .btn-primary {
@@ -345,8 +346,17 @@ input:focus {
   input:focus {
     outline-color: #1a73e8;
   }
-}
 
+  /* Flashcard-specific dark mode styles */
+  .card-title,
+  .card-text {
+    color: #e0e0e0; /* Ensure text inside flashcards is visible */
+  }
+
+  .instruction-text {
+    color: #e0e0e0; /* Ensure instructional text is visible */
+  }
+}
 
 /* Glossary Section Styling */
 #glossary {
@@ -397,7 +407,7 @@ input:focus {
   margin-bottom: 0.5rem;
 }
 
-/* Dark mode adjustments */
+/* Dark mode adjustments for Glossary */
 @media (prefers-color-scheme: dark) {
   #glossary li {
     background-color: #1e1e1e;
