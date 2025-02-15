@@ -1,24 +1,41 @@
 /* Light mode styles (default) */
 body {
   background-color: #f4f4f4;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
   color: #333;
 }
 
 #category-title {
   margin-bottom: 2rem;
+  font-size: 2.5rem; /* Larger title */
+  font-weight: bold;
+  color: #4a90e2; /* Theme color */
 }
 
 .card {
   background-color: #fff;
   border: 2px solid #333;
-  border-radius: 10px;
+  border-radius: 15px; /* More rounded corners */
   margin-top: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .btn-primary {
   background-color: #4a90e2;
   border: none;
+  padding: 0.75rem 1.5rem; /* Larger button */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #357abd; /* Darker shade on hover */
 }
 
 .btn-success {
@@ -141,26 +158,29 @@ body {
 
 #idiom-text {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem; /* Larger text for idiom */
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #1a73e8; /* Theme color */
 }
 
 #translation-text {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.2rem; /* Slightly larger text for translation */
   line-height: 1.6;
+  color: #555; /* Slightly darker text for better readability */
 }
 
 #translation-text strong {
   display: block;
   margin-top: 0.5rem;
+  color: #333; /* Darker text for emphasis */
 }
 
 .card {
   max-width: 500px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem; /* More padding for better spacing */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -355,70 +375,5 @@ input:focus {
 
   .instruction-text {
     color: #e0e0e0; /* Ensure instructional text is visible */
-  }
-}
-
-/* Glossary Section Styling */
-#glossary {
-  margin-top: 2rem;
-}
-
-#glossary h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: #4a90e2; /* You can change the color to match your theme */
-  border-bottom: 2px solid #4a90e2;
-  padding-bottom: 0.5rem;
-}
-
-#glossary ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#glossary li {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#glossary li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#glossary li strong {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-#glossary li em {
-  display: block;
-  margin-top: 0.5rem;
-  color: #666;
-  font-style: italic;
-}
-
-#glossary li br {
-  margin-bottom: 0.5rem;
-}
-
-/* Dark mode adjustments for Glossary */
-@media (prefers-color-scheme: dark) {
-  #glossary li {
-    background-color: #1e1e1e;
-    border-color: #333;
-  }
-
-  #glossary li strong {
-    color: #e0e0e0;
-  }
-
-  #glossary li em {
-    color: #ccc;
   }
 }
