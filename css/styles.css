@@ -1,18 +1,19 @@
-
+/* Light mode styles (default) */
 body {
   background-color: #f4f4f4;
   font-family: Arial, sans-serif;
+  color: #333;
 }
 
 #category-title {
-  margin-bottom: 2rem; /* Increase for more space */
+  margin-bottom: 2rem;
 }
 
 .card {
   background-color: #fff;
   border: 2px solid #333;
   border-radius: 10px;
-  margin-top: 2rem; /* Increase for more space */
+  margin-top: 2rem;
 }
 
 .btn-primary {
@@ -30,18 +31,16 @@ body {
   border: none;
 }
 
-/* Header banner */
 .header-banner {
-  background-color: #4a90e2; /* A nice blue color */
+  background-color: #4a90e2;
   padding: 1rem;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure it stays above other content */
+  z-index: 1000;
 }
 
-/* Back button */
 .back-button {
   background-color: transparent;
   border: 2px solid white;
@@ -57,99 +56,89 @@ body {
   color: #4a90e2;
 }
 
-/* Mascot */
 .mascot-image {
-  width: 150px; /* Adjust size as needed */
+  width: 150px;
   height: 150px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Egg shape */
-  object-fit: cover; /* Ensures the image fits nicely */
-  border: 3px solid #1a73e8; /* Optional: Add a border */
-  margin-bottom: 1rem; /* Space below the mascot */
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  object-fit: cover;
+  border: 3px solid #1a73e8;
+  margin-bottom: 1rem;
 }
 
-/* Custom Navbar Styles - Hamburger */
 .navbar {
-  background-color: #4a90e2 !important; /* Match the header banner color */
-  padding: 0; /* Remove default padding */
+  background-color: #4a90e2 !important;
+  padding: 0;
 }
 
-/* Hamburger Button Styling */
 .navbar-toggler {
-  border: 2px solid white; /* Add a white border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 0.5rem; /* Add padding for better clickability */
-  background-color: transparent; /* Transparent background */
-  margin-left: auto; /* Push the hamburger button to the right */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: transparent;
+  margin-left: auto;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hamburger Icon Color */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  width: 1.5em; /* Adjust icon size */
+  width: 1.5em;
   height: 1.5em;
 }
 
-/* Hover Effect for Hamburger Button */
 .navbar-toggler:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Slight white background on hover */
-  border-color: rgba(255, 255, 255, 0.8); /* Slightly lighter border on hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Focus Effect for Hamburger Button */
 .navbar-toggler:focus {
-  outline: 3px solid #1a73e8; /* Add a focus outline for accessibility */
+  outline: 3px solid #1a73e8;
   outline-offset: 2px;
 }
 
 .navbar-collapse {
-  justify-content: flex-end; /* Align menu items to the right */
-  background-color: #4a90e2; /* Match the banner blue */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  padding: 0.5rem; /* Add some padding */
+  justify-content: flex-end;
+  background-color: #4a90e2;
+  border-radius: 8px;
+  padding: 0.5rem;
 }
 
 .nav-link {
-  color: white !important; /* White text for better contrast */
+  color: white !important;
   font-weight: bold;
-  padding: 0.5rem 1rem; /* Add padding for better clickability */
+  padding: 0.5rem 1rem;
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
-  border-radius: 4px; /* Optional: Add rounded corners */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
-/* NEW Category Page Center the categories container and make it less wide */
 .categories-container {
-  max-width: 600px; /* Adjust this value to control the width */
-  margin: 0 auto; /* Center the container */
+  max-width: 600px;
+  margin: 0 auto;
   padding: 1rem;
 }
 
-/* Style for each category link */
 .category-link {
   display: block;
-  text-align: left; /* Left-align the text inside the box */
+  text-align: left;
   padding: 1rem;
   margin: 0.5rem 0;
-  background-color: #f8f9fa; /* Light background color */
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 8px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  color: #333; /* Dark text color */
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
   font-size: 1.1rem;
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  transition: background-color 0.3s ease;
 }
 
-/* Hover effect for category links */
 .category-link:hover {
-  background-color: #e9ecef; /* Slightly darker background on hover */
-  text-decoration: none; /* Ensure no underline on hover */
-  color: #000; /* Darker text on hover */
+  background-color: #e9ecef;
+  text-decoration: none;
+  color: #000;
 }
 
-/* NEWWWW Center the original idiom */
 #idiom-text {
   text-align: center;
   font-size: 1.5rem;
@@ -157,20 +146,17 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Left-align the translation, explanation, and examples */
 #translation-text {
   text-align: left;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-/* Add some spacing between sections */
 #translation-text strong {
   display: block;
   margin-top: 0.5rem;
 }
 
-/* Ensure the card looks good on smaller screens */
 .card {
   max-width: 500px;
   margin: 0 auto;
@@ -178,56 +164,49 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Button styling */
 .btn {
   margin: 0.5rem;
 }
 
-/* Instructional text styling */
 .instruction-text {
   font-size: 0.9rem;
   color: #666;
   margin-top: 1rem;
 }
 
-/* Ensure the body and html take up the full height of the page */
 html, body {
   height: 100%;
   margin: 0;
 }
 
-/* Flexbox layout to push the footer to the bottom */
 body {
   display: flex;
   flex-direction: column;
 }
 
-/* Main content area should grow to fill available space */
 .container {
   flex: 1;
 }
 
-/* Footer styling */
 .footer {
-  background-color: #f8f9fa; /* Light background color */
+  background-color: #f8f9fa;
   padding: 1rem 0;
-  text-align: center; /* Center the text */
+  text-align: center;
   font-size: 0.9rem;
   color: #666;
-  border-top: 1px solid #ddd; /* Subtle border at the top */
-  margin-top: 2rem; /* Space above the footer */
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
 }
 
 .footer a {
-  color: #4a90e2; /* Link color */
+  color: #4a90e2;
   text-decoration: none;
 }
 
 .footer a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
-/* Skip link styles */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -248,7 +227,6 @@ body {
   text-align: center;
 }
 
-/* Focus styles for interactive elements */
 button:focus,
 a:focus,
 input:focus {
@@ -256,24 +234,115 @@ input:focus {
   outline-offset: 2px;
 }
 
-/* Ensure sufficient color contrast */
-body {
-  background-color: #f4f4f4;
-  color: #333;
-}
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
 
-.header-banner {
-  background-color: #1a73e8;
-  color: white;
-}
+  .card {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
 
-.category-link {
-  background-color: #f8f9fa;
-  color: #000;
-}
+  .btn-primary {
+    background-color: #1a73e8;
+  }
 
-.category-link:hover,
-.category-link:focus {
-  background-color: #e9ecef;
-  color: #000;
+  .btn-success {
+    background-color: #2e7d32;
+  }
+
+  .btn-warning {
+    background-color: #ff8f00;
+  }
+
+  .header-banner {
+    background-color: #1a73e8;
+    color: #e0e0e0;
+  }
+
+  .back-button {
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+  }
+
+  .back-button:hover {
+    background-color: #e0e0e0;
+    color: #1a73e8;
+  }
+
+  .mascot-image {
+    border-color: #1a73e8;
+  }
+
+  .navbar {
+    background-color: #1a73e8 !important;
+  }
+
+  .navbar-toggler {
+    border-color: #e0e0e0;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23e0e0e0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .navbar-toggler:hover {
+    background-color: rgba(224, 224, 224, 0.1);
+    border-color: rgba(224, 224, 224, 0.8);
+  }
+
+  .navbar-collapse {
+    background-color: #1a73e8;
+  }
+
+  .nav-link {
+    color: #e0e0e0 !important;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(224, 224, 224, 0.1);
+  }
+
+  .categories-container {
+    background-color: #1e1e1e;
+  }
+
+  .category-link {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-link:hover {
+    background-color: #3d3d3d;
+    color: #ffffff;
+  }
+
+  .footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-top-color: #333;
+  }
+
+  .footer a {
+    color: #1a73e8;
+  }
+
+  .footer a:hover {
+    color: #64b5f6;
+  }
+
+  .skip-link:focus {
+    background-color: #1a73e8;
+    color: #e0e0e0;
+  }
+
+  button:focus,
+  a:focus,
+  input:focus {
+    outline-color: #1a73e8;
+  }
 }
