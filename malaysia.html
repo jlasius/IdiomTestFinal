@@ -99,8 +99,12 @@
       .then(data => {
         const weather = data.weather[0].description;
         const temp = data.main.temp;
+        const icon = data.weather[0].icon; // Weather icon code
+        const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`; // URL for the weather icon
+
         document.getElementById('weather').innerHTML = `
           <p>${weather}, ${temp}°C</p>
+          <img src="${iconUrl}" alt="${weather}">
         `;
       })
       .catch(error => console.error('Error fetching weather:', error));
