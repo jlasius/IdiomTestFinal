@@ -172,23 +172,9 @@ body {
 }
 
 #translation-text strong {
-  display: inline-block;
-  font-weight: bold;
-  color: #1a73e8;
-  margin-right: 0.5rem;
-}
-
-#translation-text .translation,
-#translation-text .explanation {
-  margin-bottom: 0.5rem;
-}
-
-#translation-text .examples {
-  margin-top: 1rem;
-}
-
-#translation-text .examples div {
-  margin-bottom: 0.25rem;
+  display: block;
+  margin-top: 0.5rem;
+  color: #333;
 }
 
 .card {
@@ -427,4 +413,78 @@ input:focus {
   padding-bottom: 0.5rem;
 }
 
+.category-section ul {
+  list-style-type: none;
+  padding: 0;
+}
 
+.category-section li {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-section li:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-section li strong {
+  font-size: 1.25rem;
+  color: #1a73e8;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.category-section li em {
+  display: block;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.category-section li .example {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Dark mode styles for glossary */
+@media (prefers-color-scheme: dark) {
+  .glossary-container {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section h2 {
+    color: #1a73e8;
+    border-bottom-color: #1a73e8;
+  }
+
+  .category-section li {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section li:hover {
+    background-color: #3d3d3d;
+  }
+
+  .category-section li strong {
+    color: #1a73e8;
+  }
+
+  .category-section li em {
+    color: #ccc;
+  }
+
+  .category-section li .example {
+    color: #999;
+  }
+}
