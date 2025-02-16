@@ -513,7 +513,7 @@ input:focus {
 .navbar-collapse {
   position: relative;
   z-index: 1000; /* Ensure the collapse content is below the toggler */
-  margin-top: 5.5rem; /* Add margin to prevent overlap with the toggler */
+  margin-top: 1rem; /* Add margin to prevent overlap with the toggler */
 }
 
 /* Ensure the navbar parent container doesn't clip the toggler */
