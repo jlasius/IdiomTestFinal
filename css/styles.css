@@ -120,6 +120,25 @@ body {
 }
 
 
+/* NEW Add this to your styles.css file */
+
+.navbar-toggler {
+  position: absolute;
+  right: 1rem; /* Adjust this value to position the toggler as needed */
+  top: 1rem; /* Adjust this value to position the toggler as needed */
+  z-index: 1001; /* Ensure it stays above other elements */
+}
+
+.navbar-collapse {
+  flex-direction: column;
+  margin-top: 3rem; /* Adjust this value to create space below the toggler */
+}
+
+.navbar-nav {
+  width: 100%; /* Ensure the nav items take full width */
+}
+
+
 .nav-link {
   color: white !important;
   font-weight: bold;
