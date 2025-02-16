@@ -119,28 +119,6 @@ body {
   padding: 0.5rem;
 }
 
-/* TEST TEST 3 items */
-.custom-toggler {
-  position: absolute;
-  left: 1rem; /* Adjust this value as needed to position the toggler */
-  z-index: 1001; /* Ensure the toggler is above other elements */
-}
-
-.navbar-collapse {
-  position: relative;
-  z-index: 1000; /* Ensure the collapse content is below the toggler */
-  margin-top: 2.5rem; /* Add margin to prevent overlap with the toggler */
-}
-
-.navbar {
-  position: relative; /* Ensure the toggler is positioned relative to the navbar */
-  overflow: visible; /* Ensure no clipping */
-}
-
-
-
-
-
 .nav-link {
   color: white !important;
   font-weight: bold;
