@@ -93,8 +93,8 @@
     // Weather API Integration
     const apiKey = '5ad8ac241f5b898f437ebbb8489a6bc2'; // Replace with your API key
     const city = 'Kuala Lumpur';
-    const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`;
-
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    
     fetch(weatherUrl)
       .then(response => response.json())
       .then(data => {
