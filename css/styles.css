@@ -505,7 +505,7 @@ input:focus {
 /* NEWW Custom styles for the toggler button */
 .custom-toggler {
   position: absolute;
-  left: .1rem; /* Adjust this value as needed to position the toggler */
+  left: .5rem; /* Adjust this value as needed to position the toggler */
   z-index: 1001; /* Ensure the toggler is above other elements */
 }
 
