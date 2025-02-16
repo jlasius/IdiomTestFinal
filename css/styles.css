@@ -119,6 +119,18 @@ body {
   padding: 0.5rem;
 }
 
+ /*NEW navbar related */
+.custom-toggler {
+  position: absolute;
+  left: 1rem; /* Adjust this value as needed to position the toggler */
+  z-index: 1001; /* Ensure the toggler is above other elements */
+}
+
+.navbar-collapse {
+  position: relative;
+  z-index: 1000; /* Ensure the collapse content is below the toggler */
+}
+
 .nav-link {
   color: white !important;
   font-weight: bold;
