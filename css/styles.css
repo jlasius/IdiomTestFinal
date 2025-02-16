@@ -122,7 +122,7 @@ body {
  /*NEW navbar related */
 .custom-toggler {
   position: absolute;
-  left: 1.5rem; /* Adjust this value as needed to position the toggler */
+  left: 2rem; /* Adjust this value as needed to position the toggler */
   z-index: 1001; /* Ensure the toggler is above other elements */
 }
 
