@@ -124,7 +124,7 @@ body {
 
 .navbar-toggler {
   position: absolute;
-  right: 1rem; /* Adjust this value to position the toggler as needed */
+  left: 1rem; /* Adjust this value to position the toggler as needed */
   top: 3rem; /* Adjust this value to position the toggler as needed */
   z-index: 1001; /* Ensure it stays above other elements */
 }
