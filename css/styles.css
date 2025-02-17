@@ -85,7 +85,7 @@ body {
 
 .navbar {
   background-color: #4a90e2 !important;
-  padding: 0.5rem 0; /* Adjust the padding to reduce space */
+  padding: 0rem 0; /* Adjust the padding to reduce space */
   width: 100%;
   position: relative; /* Ensure relative positioning for absolute children */
 }
@@ -98,7 +98,7 @@ body {
   padding: 0.5rem;
   background-color: transparent;
   margin-right: auto; /* Move toggler to the left */
-  margin-left: 4; /* Ensure it aligns to the left */
+  margin-left: 0; /* Ensure it aligns to the left */
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
