@@ -458,7 +458,7 @@ input:focus {
 @media (prefers-color-scheme: dark) {
   .weather-section {
     background-color: #1e1e1e;
-    color: #e0e0e0;
+    color: #4a90e2;
   }
 
   .weather-info {
