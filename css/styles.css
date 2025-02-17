@@ -462,7 +462,7 @@ input:focus {
   }
 
   .weather-info {
-    color: #e0e0e0; /* Ensure text is readable in dark mode */
+    color: #4a90e2; /* Ensure text is readable in dark mode */
   }
 
   .weather-info img {
