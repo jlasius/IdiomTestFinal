@@ -1,4 +1,4 @@
-Categories reformat  /* Light mode styles (default) */
+/* Light mode styles (default) */
 body {
   background-color: #f4f4f4;
   font-family: Arial, sans-serif;
@@ -85,6 +85,7 @@ body {
 .navbar {
   background-color: #4a90e2 !important;
   padding: 0;
+  width: 100%;
 }
 
 .navbar-toggler {
@@ -117,12 +118,20 @@ body {
   background-color: #4a90e2;
   border-radius: 8px;
   padding: 0.5rem;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.navbar-collapse.show {
+  max-height: 500px; /* Adjust based on your content */
 }
 
 .nav-link {
   color: white !important;
   font-weight: bold;
   padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -401,7 +410,6 @@ input:focus {
   margin-bottom: 0.5rem;
 }
 
-
 /* Glossary-specific styles */
 .glossary-container {
   max-width: 800px;
@@ -501,4 +509,3 @@ input:focus {
     color: #999;
   }
 }
-
