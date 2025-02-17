@@ -410,6 +410,13 @@ input:focus {
 
 /* About Malaysia */
 
+.weather-section {
+  background-color: #e3f2fd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .weather-section img {
   width: 50px;
   height: 50px;
@@ -420,33 +427,31 @@ input:focus {
   margin-bottom: 0.5rem;
 }
 
-.weather-section {
-  background-color: #e3f2fd;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .weather-info {
   font-size: 1.2rem;
   font-weight: bold;
+  color: #333; /* Ensure text is readable */
 }
 
 .weather-info img {
   width: 50px;
   height: 50px;
+  filter: brightness(0.8); /* Slightly darken the weather icon */
 }
 
-.list-group-item {
-  border: 1px solid #ddd;
-  margin-bottom: 0.5rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+/* Clean List Style */
+.clean-list {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.list-group-item:hover {
-  background-color: #f8f9fa;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.clean-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+.clean-list li:last-child {
+  border-bottom: none; /* Remove border from last item */
 }
 
 /* Dark mode styles for Malaysia page */
@@ -456,17 +461,18 @@ input:focus {
     color: #e0e0e0;
   }
 
-  .list-group-item {
-    background-color: #2d2d2d;
-    border-color: #444;
-    color: #e0e0e0;
+  .weather-info {
+    color: #e0e0e0; /* Ensure text is readable in dark mode */
   }
 
-  .list-group-item:hover {
-    background-color: #3d3d3d;
+  .weather-info img {
+    filter: brightness(1.2); /* Brighten the weather icon in dark mode */
+  }
+
+  .clean-list li {
+    border-bottom: 1px solid #444; /* Darker separator for dark mode */
   }
 }
-
 
 /* Glossary-specific styles */
 .glossary-container {
