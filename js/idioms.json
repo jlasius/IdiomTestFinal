@@ -76,15 +76,6 @@
         }
     },
     {
-        "idiom": "Hati berbunga-bunga",
-        "translation": "Heart blooming with flowers.",
-        "explanation": "Feeling overjoyed or excited.",
-        "example": {
-            "BM": "Hati saya berbunga-bunga apabila mendapat berita baik itu.",
-            "English": "My heart was blooming with joy when I heard the good news."
-        }
-    },
-    {
         "idiom": "Hati luka",
         "translation": "Wounded heart.",
         "explanation": "Feeling hurt emotionally.",
@@ -402,15 +393,6 @@
           }
         },
   {
-      "idiom": "Air dicincang tidak akan putus",
-      "translation": "Chopped water won’t break.",
-      "explanation": "Family ties cannot be broken easily.",
-      "example": {
-          "BM": "Walaupun kami bergaduh, air dicincang tidak akan putus.",
-          "English": "Even though we argue, family ties cannot be broken."
-      }
-  },
-  {
       "idiom": "Besar kepala",
       "translation": "Big head.",
       "explanation": "Being arrogant or full of oneself.",
@@ -624,15 +606,6 @@
               }
           },
           {
-              "idiom": "Bagai pucuk dicita ulam pun tiba",
-              "translation": "Like the shoot wished for, the vegetable arrives.",
-              "explanation": "Getting exactly what you wished for.",
-              "example": {
-                  "BM": "Permintaannya bagai pucuk dicita ulam pun tiba.",
-                  "English": "His wish came true exactly as he wanted."
-              }
-          },
-          {
               "idiom": "Bagai anjing dengan kucing",
               "translation": "Like a dog and a cat.",
               "explanation": "Constantly arguing or fighting.",
@@ -651,48 +624,12 @@
               }
           },
           {
-              "idiom": "Bagai mencurah air ke daun keladi",
-              "translation": "Like pouring water on a taro leaf.",
-              "explanation": "Giving advice to someone who doesn’t listen.",
-              "example": {
-                  "BM": "Nasihat saya bagai mencurah air ke daun keladi.",
-                  "English": "My advice is like pouring water on a taro leaf—he doesn’t listen."
-              }
-          },
-          {
               "idiom": "Bagai pinang dibelah dua",
               "translation": "Like a betel nut split in two.",
               "explanation": "Two people who are very similar.",
               "example": {
                   "BM": "Mereka bagai pinang dibelah dua, sangat serupa.",
                   "English": "They’re like a betel nut split in two—very similar."
-              }
-          },
-          {
-              "idiom": "Bagai api dalam sekam",
-              "translation": "Like fire in chaff.",
-              "explanation": "A hidden danger or problem.",
-              "example": {
-                  "BM": "Masalah itu bagai api dalam sekam, tidak kelihatan tetapi berbahaya.",
-                  "English": "That problem is like fire in chaff—hidden but dangerous."
-              }
-          },
-          {
-              "idiom": "Bagai burung dalam sangkar",
-              "translation": "Like a bird in a cage.",
-              "explanation": "Feeling trapped or restricted.",
-              "example": {
-                  "BM": "Dia berasa bagai burung dalam sangkar di pejabat itu.",
-                  "English": "He feels like a bird in a cage in that office."
-              }
-          },
-          {
-              "idiom": "Bagai ikan dalam air",
-              "translation": "Like a fish in water.",
-              "explanation": "Feeling very comfortable in a situation.",
-              "example": {
-                  "BM": "Dia bagai ikan dalam air ketika bermain bola.",
-                  "English": "He’s like a fish in water when playing soccer."
               }
           },
           {
@@ -738,15 +675,6 @@
               "example": {
                   "BM": "Nasihat saya bagai mencurah air ke daun keladi.",
                   "English": "My advice is like pouring water on a taro leaf—he doesn’t listen."
-              }
-          },
-          {
-              "idiom": "Bagai pinang dibelah dua",
-              "translation": "Like a betel nut split in two.",
-              "explanation": "Two people who are very similar.",
-              "example": {
-                  "BM": "Mereka bagai pinang dibelah dua, sangat serupa.",
-                  "English": "They’re like a betel nut split in two—very similar."
               }
           },
           {
@@ -863,42 +791,6 @@
               }
           },
           {
-              "idiom": "Alah bisa tegal biasa",
-              "translation": "What was once difficult becomes easy with practice.",
-              "explanation": "Persistence leads to success.",
-              "example": {
-                  "BM": "Awalnya susah, tapi alah bisa tegal biasa.",
-                  "English": "It was hard at first, but practice made it easier."
-              }
-          },
-          {
-              "idiom": "Berat sama dipikul, ringan sama dijinjing",
-              "translation": "Heavy burdens are carried together, light ones are lifted together.",
-              "explanation": "Sharing responsibilities equally.",
-              "example": {
-                  "BM": "Dalam keluarga, kita kena berat sama dipikul, ringan sama dijinjing.",
-                  "English": "In a family, we must share responsibilities equally."
-              }
-          },
-          {
-              "idiom": "Biar lambat asal selamat",
-              "translation": "Better slow but safe.",
-              "explanation": "It’s better to take your time and do things right.",
-              "example": {
-                  "BM": "Jangan terburu-buru, biar lambat asal selamat.",
-                  "English": "Don’t rush; it’s better to be slow but safe."
-              }
-          },
-          {
-              "idiom": "Genggam bara api biar sampai jadi arang",
-              "translation": "Hold the ember until it turns to charcoal.",
-              "explanation": "Persevere through difficulties until you succeed.",
-              "example": {
-                  "BM": "Kita kena genggam bara api biar sampai jadi arang untuk berjaya.",
-                  "English": "We must persevere through difficulties to succeed."
-              }
-          },
-          {
               "idiom": "Hendak seribu daya, tak hendak seribu dalih",
               "translation": "If you want it, there are a thousand ways; if you don’t, there are a thousand excuses.",
               "explanation": "Success depends on your willingness to try.",
@@ -914,15 +806,6 @@
               "example": {
                   "BM": "Kalau tidak dipecahkan ruyung, manakan dapat sagunya.",
                   "English": "If you don’t work hard, you won’t achieve success."
-              }
-          },
-          {
-              "idiom": "Malu bertanya sesat jalan",
-              "translation": "Too shy to ask, you’ll lose your way.",
-              "explanation": "Asking for help is better than failing.",
-              "example": {
-                  "BM": "Jangan malu bertanya, malu bertanya sesat jalan.",
-                  "English": "Don’t be shy to ask; asking for help is better than failing."
               }
           },
           {
@@ -966,15 +849,6 @@
             "English": "He seems quiet, but still waters run deep."
           }
         },
-        {
-          "idiom": "Bersatu kita teguh, bercerai kita roboh",
-          "translation": "United we stand, divided we fall.",
-          "explanation": "Unity brings strength.",
-          "example": {
-            "BM": "Kita kena bersatu, kerana bersatu kita teguh, bercerai kita roboh.",
-            "English": "We must unite because united we stand, divided we fall."
-          }
-        },
           {
               "idiom": "Biarpun sepandai-pandai tupai melompat, sekali-sekala jatuh juga",
               "translation": "No matter how clever a squirrel is at jumping, it will still fall sometimes.",
@@ -991,69 +865,6 @@
               "example": {
                   "BM": "Jangan putus asa, di mana ada kemahuan, di situ ada jalan.",
                   "English": "Don’t give up; where there’s a will, there’s a way."
-              }
-          },
-          {
-              "idiom": "Harimau mati meninggalkan belang, manusia mati meninggalkan nama",
-              "translation": "A tiger dies leaving its stripes, a person dies leaving their name.",
-              "explanation": "Your legacy is what you leave behind.",
-              "example": {
-                  "BM": "Berbuat baiklah, kerana harimau mati meninggalkan belang, manusia mati meninggalkan nama.",
-                  "English": "Do good, because a tiger dies leaving its stripes, a person dies leaving their name."
-              }
-          },
-          {
-              "idiom": "Ikut resmi padi, makin berisi makin tunduk",
-              "translation": "Like the rice stalk, the fuller it gets, the lower it bows.",
-              "explanation": "The more successful you are, the humbler you should be.",
-              "example": {
-                  "BM": "Jangan sombong, ikut resmi padi, makin berisi makin tunduk.",
-                  "English": "Don’t be arrogant; like the rice stalk, the fuller it gets, the lower it bows."
-              }
-          },
-          {
-              "idiom": "Jangan menilai buku dari kulitnya",
-              "translation": "Don’t judge a book by its cover.",
-              "explanation": "Appearances can be deceiving.",
-              "example": {
-                  "BM": "Jangan menilai buku dari kulitnya, dia mungkin baik hati.",
-                  "English": "Don’t judge a book by its cover; he might be kind-hearted."
-              }
-          },
-          {
-              "idiom": "Keras kepala",
-              "translation": "Hard-headed.",
-              "explanation": "Stubborn or unwilling to change.",
-              "example": {
-                  "BM": "Dia sangat keras kepala, susah nak dengar nasihat.",
-                  "English": "He’s very hard-headed; it’s hard to get him to listen to advice."
-              }
-          },
-          {
-              "idiom": "Lain padang lain belalang",
-              "translation": "Different fields, different grasshoppers.",
-              "explanation": "Different places have different customs.",
-              "example": {
-                  "BM": "Di sini lain padang lain belalang, kita kena hormati adat mereka.",
-                  "English": "Here, different fields have different grasshoppers; we must respect their customs."
-              }
-          },
-          {
-              "idiom": "Malu bertanya sesat jalan",
-              "translation": "Too shy to ask, you’ll lose your way.",
-              "explanation": "Asking for help is better than failing.",
-              "example": {
-                  "BM": "Jangan malu bertanya, malu bertanya sesat jalan.",
-                  "English": "Don’t be shy to ask; asking for help is better than failing."
-              }
-          },
-          {
-              "idiom": "Air tenang menghanyutkan",
-              "translation": "Still waters run deep.",
-              "explanation": "Quiet people often have hidden depths.",
-              "example": {
-                  "BM": "Dia kelihatan pendiam, tapi air tenang menghanyutkan.",
-                  "English": "He seems quiet, but still waters run deep."
               }
           },
           {
@@ -1063,24 +874,6 @@
               "example": {
                   "BM": "Kita kena bersatu, kerana bersatu kita teguh, bercerai kita roboh.",
                   "English": "We must unite because united we stand, divided we fall."
-              }
-          },
-          {
-              "idiom": "Biarpun sepandai-pandai tupai melompat, sekali-sekala jatuh juga",
-              "translation": "No matter how clever a squirrel is at jumping, it will still fall sometimes.",
-              "explanation": "Everyone makes mistakes.",
-              "example": {
-                  "BM": "Jangan terlalu yakin, biarpun sepandai-pandai tupai melompat, sekali-sekala jatuh juga.",
-                  "English": "Don’t be overconfident; even the cleverest squirrel falls sometimes."
-              }
-          },
-          {
-              "idiom": "Di mana ada kemahuan, di situ ada jalan",
-              "translation": "Where there’s a will, there’s a way.",
-              "explanation": "Determination leads to success.",
-              "example": {
-                  "BM": "Jangan putus asa, di mana ada kemahuan, di situ ada jalan.",
-                  "English": "Don’t give up; where there’s a will, there’s a way."
               }
           },
           {
@@ -1321,15 +1114,6 @@
       "example": {
           "BM": "Dia seperti kera sumbang, selalu bising.",
           "English": "He’s like a noisy monkey, always making noise."
-      }
-  },
-  {
-      "idiom": "Laksana cendawan tumbuh selepas hujan",
-      "translation": "Like mushrooms growing after the rain.",
-      "explanation": "Something that appears quickly and in large numbers.",
-      "example": {
-          "BM": "Kedai kopi baru laksana cendawan tumbuh selepas hujan.",
-          "English": "New coffee shops are popping up like mushrooms after the rain."
       }
   },
   {
