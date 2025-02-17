@@ -505,15 +505,15 @@ input:focus {
 /* NEWW Custom styles for the toggler button */
 .custom-toggler {
   position: absolute;
-  left: .5rem; /* Adjust this value as needed to position the toggler */
+  left: 1rem; /* Adjust this value as needed to position the toggler */
   z-index: 1001; /* Ensure the toggler is above other elements */
 }
 
 /* Ensure the navbar collapse content stays below the toggler */
 .navbar-collapse {
   position: relative;
-  z-index: 7000; /* Ensure the collapse content is below the toggler */
-  margin-top: 5rem; /* Add margin to prevent overlap with the toggler */
+  z-index: 1000; /* Ensure the collapse content is below the toggler */
+  margin-top: 2.5rem; /* Add margin to prevent overlap with the toggler */
 }
 
 /* Ensure the navbar parent container doesn't clip the toggler */
