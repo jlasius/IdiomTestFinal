@@ -410,6 +410,8 @@ input:focus {
 
 /* About Malaysia */
 
+/* About Malaysia */
+
 .weather-section {
   background-color: #e3f2fd;
   padding: 1.5rem;
@@ -457,16 +459,16 @@ input:focus {
 /* Dark mode styles for Malaysia page */
 @media (prefers-color-scheme: dark) {
   .weather-section {
-    background-color: #1e1e1e;
-    color: #4a90e2;
+    background-color: #2d2d2d; /* Darker background for better contrast */
+    color: #e0e0e0;
   }
 
   .weather-info {
-    color: #4a90e2; /* Ensure text is readable in dark mode */
+    color: #e0e0e0; /* Ensure text is readable in dark mode */
   }
 
   .weather-info img {
-    filter: brightness(1.2); /* Brighten the weather icon in dark mode */
+    filter: brightness(1.5) invert(0.1); /* Brighten and slightly invert the icon */
   }
 
   .clean-list li {
