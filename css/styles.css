@@ -124,7 +124,7 @@ body {
   background-color: #4a90e2;
   border-radius: 8px;
   padding: 1rem;
-  transition: max-height 1.0s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
   max-height: 0;
   overflow: hidden;
   position: absolute; /* Position the dropdown absolutely */
