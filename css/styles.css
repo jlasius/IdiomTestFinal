@@ -120,22 +120,21 @@ body {
   outline-offset: 2px;
 }
 
+
 .navbar-collapse {
   background-color: #4a90e2;
   border-radius: 8px;
   padding: 1rem;
-  transition: max-height 0.3s ease-in-out;
-  max-height: 0;
+  transition: height 0.3s ease-in-out;
+  height: 0;
   overflow: hidden;
-  position: absolute; /* Position the dropdown absolutely */
-  top: 100%; /* Position it below the toggle button */
-  left: 0; /* Align with the left edge */
-  width: 100%; /* Full width */
-  z-index: 1000; /* Ensure it's above other content */
+  position: relative; /* Change from absolute to relative */
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-collapse.show {
-  max-height: 500px; /* Adjust based on your content */
+  height: auto; /* Change from max-height to height */
 }
 
 .navbar-nav {
