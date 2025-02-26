@@ -1,3 +1,32 @@
+// Navbar Toggle Functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  navbarToggler.addEventListener('click', function () {
+    if (navbarCollapse.classList.contains('show')) {
+      // Collapse the navbar
+      navbarCollapse.style.height = `${navbarCollapse.scrollHeight}px`;
+      setTimeout(() => {
+        navbarCollapse.style.height = '0';
+      }, 10); // Small delay to allow the browser to register the height change
+    } else {
+      // Expand the navbar
+      navbarCollapse.style.height = `${navbarCollapse.scrollHeight}px`;
+      setTimeout(() => {
+        navbarCollapse.style.height = 'auto';
+      }, 300); // Match the duration of the CSS transition
+    }
+  });
+
+  // Handle the transition end to set height to auto
+  navbarCollapse.addEventListener('transitionend', function () {
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.style.height = 'auto';
+    }
+  });
+});
+
 // Go back to the previous page
 window.goBack = function () {
   window.history.back();
