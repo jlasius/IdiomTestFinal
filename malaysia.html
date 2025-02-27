@@ -7,6 +7,7 @@
   <title>Visit Malaysia - IdiomKu</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -40,12 +41,16 @@
   <!-- Skip to main content link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <main class="container mt-5" id="main-content">
-    <div class="text-center">
+  <!-- Iconic Image Section -->
+  <div class="iconic-image-section">
+    <img src="images/petronas_towers.jpg" alt="Petronas Twin Towers" class="img-fluid">
+    <div class="iconic-image-caption">
       <h1>Visit Malaysia</h1>
       <p class="lead">Explore the culture, history, and beauty of Malaysia.</p>
     </div>
+  </div>
 
+  <main class="container mt-5" id="main-content">
     <!-- Weather API Section -->
     <div class="weather-section text-center mb-5 p-4 bg-light rounded">
       <h2>Current Weather in Kuala Lumpur</h2>
@@ -67,11 +72,15 @@
         </li>
         <li>
           <strong>Crafts</strong> - Discover intricate <a href="https://www.youtube.com/watch?v=gdD4JuJ4O7s" target="_blank"> <em>batik</em></a> textiles, <a href="https://ich.unesco.org/en/RL/songket-01505" target="_blank"> <em>songket</em></a> weaving, and traditional woodcarving.
-          <img src="images/durian-batik.jpeg" alt="Durian Batik Art" class="img-fluid rounded mt-3" style="max-width: 100%; height: auto;">
+          <a href="images/durian-batik.jpeg" data-lightbox="culture" data-title="Durian Batik Art">
+            <img src="images/durian-batik.jpeg" alt="Durian Batik Art" class="img-fluid rounded mt-3" loading="lazy">
+          </a>
         </li>
         <li>
           <strong>Wayang Kulit</strong> - A traditional <a href="https://www.eksentrika.com/wayang-kulit-at-kl/" target="_blank">shadow puppet theater</a> that tells stories from epics like the <em>Ramayana</em> and <em>Mahabharata</em>.
-          <img src="images/wayang_kulit.jpeg" alt="Wayang Kulit Performance" class="img-fluid rounded mt-3" style="max-width: 100%; height: auto;">
+          <a href="images/wayang_kulit.jpeg" data-lightbox="culture" data-title="Wayang Kulit Performance">
+            <img src="images/wayang_kulit.jpeg" alt="Wayang Kulit Performance" class="img-fluid rounded mt-3" loading="lazy">
+          </a>
         </li>
         <li>
           <strong>Festivals</strong> - Celebrate cultural events like <em>Hari Raya</em>, <em>Chinese New Year</em>, <em>Deepavali</em>, and <em>Harvest Festival</em> (Pesta Kaamatan).
@@ -103,7 +112,9 @@
           <ul>
             <li>
               <strong>Downtown KL</strong> - Explore Masjed Jamek, Dataran Merdeka, the <a href="https://www.iamm.org.my/" target="_blank">Islamic Arts Museum</a>, and the Majestic Hotel.
-              <img src="images/dataran_merdeka.jpg" alt="Dataran Merdeka" class="img-fluid rounded mt-3" style="max-width: 100%; height: auto;">
+              <a href="images/dataran_merdeka.jpg" data-lightbox="places" data-title="Dataran Merdeka">
+                <img src="images/dataran_merdeka.jpg" alt="Dataran Merdeka" class="img-fluid rounded mt-3" loading="lazy">
+              </a>
             </li>
             <li><strong>National Museum of Malaysia</strong> - A great introduction to the country's history. Visit <a href="https://www.muziumnegara.gov.my/en" target="_blank">here</a>.</li>
             <li><strong>Central Market (Pasar Seni)</strong> - A historical and cultural hub for crafts and souvenirs.</li>
@@ -128,13 +139,17 @@
       <ul class="clean-list">
         <li>
           <strong>Bako National Park</strong> - Located in Sarawak, this park is known for its diverse wildlife, hiking trails, and unique coastal formations. Learn more about <a href="https://bakonationalpark.com/" target="_blank">Bako National Park</a>.
-          <img src="images/bako_national_park.jpeg" alt="Bako National Park" class="img-fluid rounded mt-3" style="max-width: 100%; height: auto;">
+          <a href="images/bako_national_park.jpeg" data-lightbox="places" data-title="Bako National Park">
+            <img src="images/bako_national_park.jpeg" alt="Bako National Park" class="img-fluid rounded mt-3" loading="lazy">
+          </a>
         </li>
         <li><strong>Mulu Caves</strong> - A UNESCO World Heritage Site in Sarawak. Visit <a href="https://mulupark.com/" target="_blank">Mulu Caves</a>.</li>
         <li><strong>Kinabatangan River</strong> - Located in Sabah, this river is famous for its wildlife, including proboscis monkeys, pygmy elephants, and orangutans. Discover <a href="https://www.tripadvisor.com/Attraction_Review-g298306-d945745-Reviews-Kinabatangan_River-Sabah.html" target="_blank">Kinabatangan River</a>.</li>
         <li>
           <strong>Mount Kinabalu</strong> - The highest peak in Southeast Asia. Explore <a href="https://goo.gl/maps/fZs5rngRVLS1x7iS6" target="_blank">Mount Kinabalu</a>.
-          <img src="images/Mount Kinabalu.jpg" alt="Mount Kinabalu" class="img-fluid rounded mt-3" style="max-width: 100%; height: auto;">
+          <a href="images/Mount Kinabalu.jpg" data-lightbox="places" data-title="Mount Kinabalu">
+            <img src="images/Mount Kinabalu.jpg" alt="Mount Kinabalu" class="img-fluid rounded mt-3" loading="lazy">
+          </a>
         </li>
       </ul>
     </div>
@@ -161,6 +176,8 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="js/main.js"></script>
   <script>
     // Weather API Integration
     const apiKey = '5ad8ac241f5b898f437ebbb8489a6bc2'; // Replace with your API key
