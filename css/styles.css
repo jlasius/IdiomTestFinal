@@ -445,24 +445,6 @@ input:focus {
 }
 
 
-/* NEWW 2/27/25 Iconic Image Section */
-.iconic-image-section {
-  position: relative;
-  text-align: center;
-}
-
-.iconic-image-section img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.iconic-image-caption {
-  position: absolute;
-  top: 50
-
-
 /* Clean List Style */
 .clean-list {
   list-style-type: none;
