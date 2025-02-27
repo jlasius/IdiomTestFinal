@@ -579,3 +579,66 @@ input:focus {
     color: #999;
   }
 }
+
+
+/* Add these styles to your existing styles.css */
+
+/* Iconic Image Section */
+.iconic-image-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.iconic-image-section img {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.iconic-image-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Weather Section */
+.weather-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.weather-info img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Spotify Embed */
+.spotify-embed {
+  margin: 1rem 0;
+}
+
+/* General Spacing */
+.culture-art, .legends, .cities-places, .resources {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
