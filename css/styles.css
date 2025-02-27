@@ -593,19 +593,49 @@ input:focus {
 .iconic-image-section img {
   width: 100%;
   height: auto;
-  max-height: 500px; /* Adjust as needed */
+  max-height: 400px; /* Adjusted for better visibility on web */
   object-fit: cover;
+  object-position: center top; /* Show more of the top of the image */
 }
 
 .iconic-image-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+  position: static; /* Move caption below the image */
+  color: #333; /* Dark text for better readability */
+  background-color: transparent; /* Remove background */
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .iconic-image-section img {
+    max-height: 300px; /* Smaller height for mobile */
+  }
+
+  .iconic-image-caption {
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Center and resize images */
+.culture-art img,
+.cities-places img {
+  display: block;
+  margin: 1rem auto; /* Center images */
+  max-width: 80%; /* Limit image width */
+  height: auto;
   border-radius: 8px;
+}
+
+/* Adjust Durian Batik image size */
+.culture-art img[alt="Durian Batik Art"] {
+  max-width: 60%; /* Smaller size for Durian Batik */
+}
+
+/* Adjust Wayang Kulit image size */
+.culture-art img[alt="Wayang Kulit Performance"] {
+  max-width: 50%; /* Smaller size for Wayang Kulit */
 }
 
 /* Weather Section */
