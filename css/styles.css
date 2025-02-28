@@ -636,7 +636,7 @@ input:focus {
 
 /* Weather Section */
 .weather-section {
-  margin-top: 1rem; /* Reduced margin */
+  margin-top: -2rem; /* Reduced margin */
   margin-bottom: 2rem;
 }
 
