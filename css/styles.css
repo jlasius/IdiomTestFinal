@@ -82,15 +82,12 @@ body {
   margin-bottom: 1rem;
 }
 
-
 .navbar {
   background-color: #4a90e2 !important;
   padding: 0rem 0; /* Adjust the padding to reduce space */
   width: 100%;
   position: relative; /* Ensure relative positioning for absolute children */
 }
-
-
 
 .navbar-toggler {
   border: 2px solid white;
@@ -101,8 +98,6 @@ body {
   margin-left: 0; /* Ensure it aligns to the left */
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-
-
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -119,7 +114,6 @@ body {
   outline: 3px solid #1a73e8;
   outline-offset: 2px;
 }
-
 
 .navbar-collapse {
   background-color: #4a90e2;
@@ -444,7 +438,6 @@ input:focus {
   filter: brightness(0.8); /* Slightly darken the weather icon */
 }
 
-
 /* Clean List Style */
 .clean-list {
   list-style-type: none;
@@ -580,279 +573,22 @@ input:focus {
   }
 }
 
-
-/* Add these styles to your existing styles.css */
-
-/* Iconic Image Section */
+/* Malaysia Page Specific Styles */
 .iconic-image-section {
-  position: relative;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.iconic-image-section img {
-  width: 100%;
-  height: auto;
-  max-height: 400px; /* Adjusted for better visibility on web */
-  object-fit: cover;
-  object-position: center top; /* Show more of the top of the image */
-}
-
-.iconic-image-caption {
-  position: static; /* Move caption below the image */
-  color: #333; /* Dark text for better readability */
-  background-color: transparent; /* Remove background */
-  padding: 1rem 0;
-  margin-top: 1rem;
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  .iconic-image-section img {
-    max-height: 300px; /* Smaller height for mobile */
-  }
-
-  .iconic-image-caption {
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
-  }
-}
-
-/* Center and resize images */
-.culture-art img,
-.cities-places img {
-  display: block;
-  margin: 1rem auto; /* Center images */
-  max-width: 80%; /* Limit image width */
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Adjust Durian Batik image size */
-.culture-art img[alt="Durian Batik Art"] {
-  max-width: 60%; /* Smaller size for Durian Batik */
-}
-
-/* Adjust Wayang Kulit image size */
-.culture-art img[alt="Wayang Kulit Performance"] {
-  max-width: 50%; /* Smaller size for Wayang Kulit */
-}
-
-/* Weather Section */
-.weather-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.weather-info img {
-  width: 50px;
-  height: 50px;
-}
-
-/* Spotify Embed */
-.spotify-embed {
-  margin: 1rem 0;
-}
-
-/* General Spacing */
-.culture-art, .legends, .cities-places, .resources {
-  margin-bottom: 2rem;
-}
-
-/* Responsive Images */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Add these styles to your existing styles.css */
-
-/* Iconic Image Section */
-.iconic-image-section {
-  position: relative;
   text-align: center;
   margin-bottom: 1rem; /* Reduced margin */
 }
 
 .iconic-image-section img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
   max-height: 400px; /* Adjusted for better visibility on web */
   object-fit: cover;
   object-position: center top; /* Show more of the top of the image */
+  border-radius: 8px; /* Consistent with other images */
 }
 
 .iconic-image-caption {
-  position: static; /* Move caption below the image */
-  color: #333; /* Dark text for better readability */
-  background-color: transparent; /* Remove background */
-  padding: 1rem 0;
-  margin-top: 0.5rem; /* Reduced margin */
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  .iconic-image-section img {
-    max-height: 300px; /* Smaller height for mobile */
-  }
-
-  .iconic-image-caption {
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
-  }
-}
-
-/* Center and resize images */
-.culture-art img,
-.cities-places img {
-  display: block;
-  margin: 1rem auto; /* Center images */
-  max-width: 80%; /* Limit image width */
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Adjust Durian Batik image size */
-.culture-art img[alt="Durian Batik Art"] {
-  max-width: 60%; /* Smaller size for Durian Batik */
-}
-
-/* Adjust Wayang Kulit image size */
-.culture-art img[alt="Wayang Kulit Performance"] {
-  max-width: 50%; /* Smaller size for Wayang Kulit */
-}
-
-/* Weather Section */
-.weather-section {
-  margin-top: 1rem; /* Reduced margin */
-  margin-bottom: 2rem;
-}
-
-.weather-info img {
-  width: 50px;
-  height: 50px;
-}
-
-/* Spotify Embed */
-.spotify-embed {
-  margin: 1rem 0;
-}
-
-/* General Spacing */
-.culture-art, .legends, .cities-places, .resources {
-  margin-bottom: 2rem;
-}
-
-/* Responsive Images */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Add these styles to your existing styles.css */
-
-/* Iconic Image Section */
-.iconic-image-section {
-  position: relative;
-  text-align: center;
-  margin-bottom: 1rem; /* Reduced margin */
-}
-
-.iconic-image-section img {
-  width: 100%;
-  height: auto;
-  max-height: 400px; /* Adjusted for better visibility on web */
-  object-fit: cover;
-  object-position: center top; /* Show more of the top of the image */
-}
-
-.iconic-image-caption {
-  position: static; /* Move caption below the image */
-  color: #333; /* Dark text for better readability */
-  background-color: transparent; /* Remove background */
-  padding: 1rem 0;
-  margin-top: 0.5rem; /* Reduced margin */
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  .iconic-image-section img {
-    max-height: 300px; /* Smaller height for mobile */
-  }
-
-  .iconic-image-caption {
-    padding: 0.5rem 0;
-    margin-top: 0.5rem;
-  }
-}
-
-/* Center and resize images */
-.culture-art img,
-.cities-places img {
-  display: block;
-  margin: 1rem auto; /* Center images */
-  max-width: 80%; /* Limit image width */
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Adjust Durian Batik image size */
-.culture-art img[alt="Durian Batik Art"] {
-  max-width: 60%; /* Smaller size for Durian Batik */
-}
-
-/* Adjust Wayang Kulit image size */
-.culture-art img[alt="Wayang Kulit Performance"] {
-  max-width: 50%; /* Smaller size for Wayang Kulit */
-}
-
-/* Weather Section */
-.weather-section {
-  margin-top: 1rem; /* Reduced margin */
-  margin-bottom: 2rem;
-}
-
-.weather-info img {
-  width: 50px;
-  height: 50px;
-}
-
-/* Spotify Embed */
-.spotify-embed {
-  margin: 1rem 0;
-}
-
-/* General Spacing */
-.culture-art, .legends, .cities-places, .resources {
-  margin-bottom: 2rem;
-}
-
-/* Responsive Images */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* Add these styles to your existing styles.css */
-
-/* Iconic Image Section */
-.iconic-image-section {
-  position: relative;
-  text-align: center;
-  margin-bottom: 1rem; /* Reduced margin */
-}
-
-.iconic-image-section img {
-  width: 75%;
-  height: auto;
-  max-height: 400px; /* Adjusted for better visibility on web */
-  object-fit: cover;
-  object-position: center top; /* Show more of the top of the image */
-}
-
-.iconic-image-caption {
-  position: static; /* Move caption below the image */
   color: #333; /* Dark text for better readability in light mode */
   background-color: transparent; /* Remove background */
   padding: 1rem 0;
@@ -905,22 +641,4 @@ input:focus {
 }
 
 .weather-info img {
-  width: 50px;
-  height: 50px;
-}
-
-/* Spotify Embed */
-.spotify-embed {
-  margin: 1rem 0;
-}
-
-/* General Spacing */
-.culture-art, .legends, .cities-places, .resources {
-  margin-bottom: 2rem;
-}
-
-/* Responsive Images */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
+  width: 50px
