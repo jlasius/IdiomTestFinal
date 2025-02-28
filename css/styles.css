@@ -832,3 +832,95 @@ input:focus {
   max-width: 100%;
   height: auto;
 }
+
+
+/* Add these styles to your existing styles.css */
+
+/* Iconic Image Section */
+.iconic-image-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+.iconic-image-section img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Adjusted for better visibility on web */
+  object-fit: cover;
+  object-position: center top; /* Show more of the top of the image */
+}
+
+.iconic-image-caption {
+  position: static; /* Move caption below the image */
+  color: #333; /* Dark text for better readability in light mode */
+  background-color: transparent; /* Remove background */
+  padding: 1rem 0;
+  margin-top: 0.5rem; /* Reduced margin */
+}
+
+/* Dark mode styles for iconic image caption */
+@media (prefers-color-scheme: dark) {
+  .iconic-image-caption {
+    color: #e0e0e0; /* Light text for better readability in dark mode */
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .iconic-image-section img {
+    max-height: 300px; /* Smaller height for mobile */
+  }
+
+  .iconic-image-caption {
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Center and resize images */
+.culture-art img,
+.cities-places img {
+  display: block;
+  margin: 1rem auto; /* Center images */
+  max-width: 80%; /* Limit image width */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Adjust Durian Batik image size */
+.culture-art img[alt="Durian Batik Art"] {
+  max-width: 60%; /* Smaller size for Durian Batik */
+}
+
+/* Adjust Wayang Kulit image size */
+.culture-art img[alt="Wayang Kulit Performance"] {
+  max-width: 50%; /* Smaller size for Wayang Kulit */
+}
+
+/* Weather Section */
+.weather-section {
+  margin-top: 1rem; /* Reduced margin */
+  margin-bottom: 2rem;
+}
+
+.weather-info img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Spotify Embed */
+.spotify-embed {
+  margin: 1rem 0;
+}
+
+/* General Spacing */
+.culture-art, .legends, .cities-places, .resources {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
