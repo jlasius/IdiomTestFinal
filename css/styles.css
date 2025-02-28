@@ -844,7 +844,7 @@ input:focus {
 }
 
 .iconic-image-section img {
-  width: 100%;
+  width: 70%;
   height: auto;
   max-height: 400px; /* Adjusted for better visibility on web */
   object-fit: cover;
