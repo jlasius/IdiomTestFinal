@@ -582,7 +582,7 @@ input:focus {
 .iconic-image-section img {
   width: 100%; /* Full width */
   height: auto; /* Maintain aspect ratio */
-  max-height: 400px; /* Adjusted for better visibility on web */
+  max-height: 500px; /* Adjusted for better visibility on web */
   object-fit: cover;
   object-position: center top; /* Show more of the top of the image */
   border-radius: 8px; /* Consistent with other images */
