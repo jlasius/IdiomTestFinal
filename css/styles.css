@@ -174,68 +174,61 @@ p {
   border-radius: 8px;
 }
 
-/* Glossary-specific Styles */
-.glossary-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Footer */
+.footer {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 2rem;
 }
 
-.category-section {
-  margin-bottom: 2rem;
+.footer a {
+  color: white;
+  text-decoration: none;
 }
 
-.category-section h2 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #4a90e2;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #4a90e2;
-  padding-bottom: 0.5rem;
+.footer a:hover {
+  text-decoration: underline;
 }
 
-.category-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.category-section li {
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+/* Categories in Index Page */
+.categories-container {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 1rem;
+}
+
+.category-link {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #4a90e2;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-link:hover {
+  background-color: white;
+  color: #4a90e2;
+}
+
+/* Mascot Styling */
+.mascot-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1a73e8;
   margin-bottom: 1rem;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.category-section li:hover {
-  background-color: #e9ecef;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.category-section li strong {
-  font-size: 1.25rem;
-  color: #1a73e8;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.category-section li em {
-  display: block;
-  font-style: italic;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-.category-section li .example {
-  display: block;
-  color: #666;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
 }
 
 /* Dark Mode Styles */
@@ -268,36 +261,20 @@ p {
     border-bottom: 1px solid #444;
   }
 
-  .glossary-container {
-    background-color: #1e1e1e;
-    border-color: #444;
+  .footer {
+    background-color: #1a73e8;
+    color: #e0e0e0;
+    border-top-color: #444;
+  }
+
+  .category-link {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
     color: #e0e0e0;
   }
 
-  .category-section h2 {
+  .category-link:hover {
+    background-color: #e0e0e0;
     color: #1a73e8;
-    border-bottom-color: #1a73e8;
-  }
-
-  .category-section li {
-    background-color: #2d2d2d;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .category-section li:hover {
-    background-color: #3d3d3d;
-  }
-
-  .category-section li strong {
-    color: #1a73e8;
-  }
-
-  .category-section li em {
-    color: #ccc;
-  }
-
-  .category-section li .example {
-    color: #999;
   }
 }
