@@ -585,7 +585,7 @@ input:focus {
   max-height: 500px; /* Adjusted for better visibility on web */
   object-fit: cover;
   object-position: center top; /* Show more of the top of the image */
-  border-radius: 8px; /* Consistent with other images */
+  border-radius: 0px; /* Consistent with other images */
 }
 
 .iconic-image-caption {
