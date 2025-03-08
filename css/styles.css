@@ -207,6 +207,10 @@ p {
   margin-top: 2rem;
 }
 
+.footer p {
+  color: white; /* Ensures the text is white */
+}
+
 .footer a {
   color: white;
   text-decoration: none;
