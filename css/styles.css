@@ -191,7 +191,7 @@ p {
 .cities-places img {
   display: block;
   margin: 1rem auto;
-  max-width: 80%;
+  max-width: 45%;
   height: auto;
   border-radius: 8px;
 }
