@@ -41,7 +41,7 @@ p {
 /* Header Banner */
 .header-banner {
   background-color: #4a90e2;
-  padding: 1.5rem;
+  padding: 1.25rem;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
