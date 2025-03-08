@@ -1,54 +1,22 @@
-/* Light mode styles (default) */
+/* General Styles */
 body {
-  background-color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
-  color: #333;
   line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
-#category-title {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4a90e2;
+h1, h2, h3 {
+  font-weight: 600;
+  color: #1a73e8;
 }
 
-.card {
-  background-color: #fff;
-  border: 2px solid #333;
-  border-radius: 10px;
-  margin-top: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.btn-primary {
-  background-color: #4a90e2;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #357abd;
-}
-
-.btn-success {
-  background-color: #28a745;
-  border: none;
-}
-
-.btn-warning {
-  background-color: #ffc107;
-  border: none;
-}
-
+/* Header Banner */
 .header-banner {
   background-color: #4a90e2;
   padding: 1.5rem;
@@ -59,35 +27,9 @@ body {
   z-index: 1000;
 }
 
-.back-button {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: white;
-  color: #4a90e2;
-}
-
-.mascot-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  object-fit: cover;
-  border: 3px solid #1a73e8;
-  margin-bottom: 1rem;
-}
-
 .navbar {
   background-color: #4a90e2 !important;
-  padding: 0rem 0; /* Adjust the padding to reduce space */
-  width: 100%;
-  position: relative; /* Ensure relative positioning for absolute children */
+  padding: 0;
 }
 
 .navbar-toggler {
@@ -95,8 +37,8 @@ body {
   border-radius: 4px;
   padding: 0.5rem;
   background-color: transparent;
-  margin-right: auto; /* Move toggler to the left */
-  margin-left: 0; /* Ensure it aligns to the left */
+  margin-right: auto;
+  margin-left: 0;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -111,11 +53,6 @@ body {
   border-color: rgba(255, 255, 255, 0.8);
 }
 
-.navbar-toggler:focus {
-  outline: 3px solid #1a73e8;
-  outline-offset: 2px;
-}
-
 .navbar-collapse {
   background-color: #4a90e2;
   border-radius: 8px;
@@ -123,18 +60,18 @@ body {
   transition: height 0.3s ease-in-out;
   height: 0;
   overflow: hidden;
-  position: relative; /* Change from absolute to relative */
+  position: relative;
   width: 100%;
   z-index: 1000;
 }
 
 .navbar-collapse.show {
-  height: auto; /* Change from max-height to height */
+  height: auto;
 }
 
 .navbar-nav {
-  flex-direction: column; /* Stack links vertically */
-  padding-left: 0; /* Remove default padding */
+  flex-direction: column;
+  padding-left: 0;
 }
 
 .nav-link {
@@ -149,142 +86,26 @@ body {
   border-radius: 4px;
 }
 
-.categories-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.category-link {
-  display: block;
-  text-align: left;
-  padding: 1rem;
-  margin: 0.5rem 0;
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #333;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
-}
-
-.category-link:hover {
-  background-color: #e9ecef;
-  text-decoration: none;
-  color: #000;
-}
-
-#idiom-text {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #1a73e8;
-}
-
-#translation-text {
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-#translation-text strong {
-  display: block;
-  margin-top: 0.5rem;
-  color: #333;
-}
-
-.card {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-  margin: 0.5rem;
-}
-
-.instruction-text {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 1rem;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  flex: 1;
-}
-
-.footer {
-  background-color: #f8f9fa;
-  padding: .3rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-  margin-top: 2rem;
-}
-
-.footer a {
-  color: #4a90e2;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  z-index: 999;
-}
-
-.skip-link:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  padding: 0.5rem;
-  background-color: #1a73e8;
-  color: white;
-  text-align: center;
-}
-
-button:focus,
-a:focus,
-input:focus {
-  outline: 3px solid #1a73e8;
-  outline-offset: 2px;
-}
-
 /* Iconic Image Section */
+.iconic-image-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .iconic-image-section img {
   width: 100%;
   height: auto;
-  max-height: 500px;
+  max-height: 400px; /* Adjusted for better visibility */
   object-fit: cover;
+  object-position: center top;
   border-radius: 8px;
 }
 
 .iconic-image-caption {
-  text-align: center;
-  margin-top: 1rem;
+  color: #333;
+  background-color: transparent;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
 }
 
 .iconic-image-caption h1 {
@@ -299,15 +120,16 @@ input:focus {
 
 /* Weather Section */
 .weather-section {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  background-color: #e3f2fd;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .weather-info {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #333;
 }
 
@@ -342,7 +164,81 @@ input:focus {
   padding: 0.3rem 0;
 }
 
-/* Dark mode styles */
+/* Image Alignment */
+.culture-art img,
+.cities-places img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Glossary-specific Styles */
+.glossary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.category-section {
+  margin-bottom: 2rem;
+}
+
+.category-section h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.5rem;
+}
+
+.category-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-section li {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-section li:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-section li strong {
+  font-size: 1.25rem;
+  color: #1a73e8;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.category-section li em {
+  display: block;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.category-section li .example {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212;
@@ -355,129 +251,8 @@ input:focus {
     color: #e0e0e0;
   }
 
-  .btn-primary {
-    background-color: #1a73e8;
-  }
-
-  .btn-success {
-    background-color: #2e7d32;
-  }
-
-  .btn-warning {
-    background-color: #ff8f00;
-  }
-
-  .header-banner {
-    background-color: #1a73e8;
-    color: #e0e0e0;
-  }
-
-  .back-button {
-    border-color: #e0e0e0;
-    color: #e0e0e0;
-  }
-
-  .back-button:hover {
-    background-color: #e0e0e0;
-    color: #1a73e8;
-  }
-
-  .mascot-image {
-    border-color: #1a73e8;
-  }
-
-  .navbar {
-    background-color: #1a73e8 !important;
-  }
-
-  .navbar-toggler {
-    border-color: #e0e0e0;
-  }
-
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23e0e0e0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-
-  .navbar-toggler:hover {
-    background-color: rgba(224, 224, 224, 0.1);
-    border-color: rgba(224, 224, 224, 0.8);
-  }
-
-  .navbar-collapse {
-    background-color: #1a73e8;
-  }
-
-  .nav-link {
-    color: #e0e0e0 !important;
-  }
-
-  .nav-link:hover {
-    background-color: rgba(224, 224, 224, 0.1);
-  }
-
-  .categories-container {
-    background-color: #1e1e1e;
-  }
-
-  .category-link {
-    background-color: #2d2d2d;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .category-link:hover {
-    background-color: #3d3d3d;
-    color: #ffffff;
-  }
-
-  .footer {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-    border-top-color: #333;
-  }
-
-  .footer a {
-    color: #1a73e8;
-  }
-
-  .footer a:hover {
-    color: #64b5f6;
-  }
-
-  .skip-link:focus {
-    background-color: #1a73e8;
-    color: #e0e0e0;
-  }
-
-  button:focus,
-  a:focus,
-  input:focus {
-    outline-color: #1a73e8;
-  }
-
-  .card-title,
-  .card-text {
-    color: #e0e0e0;
-  }
-
-  #idiom-text {
-    color: #e0e0e0;
-  }
-
-  #translation-text {
-    color: #ccc;
-  }
-
-  #translation-text strong {
-    color: #e0e0e0;
-  }
-
-  .instruction-text {
-    color: #ccc;
-  }
-
   .weather-section {
-    background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
+    background-color: #2d2d2d;
     color: #e0e0e0;
   }
 
@@ -492,7 +267,37 @@ input:focus {
   .clean-list li {
     border-bottom: 1px solid #444;
   }
+
+  .glossary-container {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section h2 {
+    color: #1a73e8;
+    border-bottom-color: #1a73e8;
+  }
+
+  .category-section li {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section li:hover {
+    background-color: #3d3d3d;
+  }
+
+  .category-section li strong {
+    color: #1a73e8;
+  }
+
+  .category-section li em {
+    color: #ccc;
+  }
+
+  .category-section li .example {
+    color: #999;
+  }
 }
-
-
-
