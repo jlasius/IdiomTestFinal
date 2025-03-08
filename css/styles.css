@@ -120,7 +120,7 @@ p {
   max-height: 400px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .iconic-image-caption {
