@@ -16,6 +16,28 @@ p {
   color: #555;
 }
 
+/* Skip to Main Content */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  background-color: #1a73e8;
+  color: white;
+  text-align: center;
+  clip: auto;
+}
+
 /* Header Banner */
 .header-banner {
   background-color: #4a90e2;
@@ -95,7 +117,7 @@ p {
 .iconic-image-section img {
   width: 100%;
   height: auto;
-  max-height: 400px; /* Adjusted for better visibility */
+  max-height: 400px;
   object-fit: cover;
   object-position: center top;
   border-radius: 8px;
@@ -231,6 +253,114 @@ p {
   margin-bottom: 1rem;
 }
 
+/* Flashcards Styling */
+.card {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#translation-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+#translation-text strong {
+  display: block;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+/* Back Button in Flashcards */
+.back-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: white;
+  color: #4a90e2;
+}
+
+/* Glossary Styling */
+.glossary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.category-section {
+  margin-bottom: 2rem;
+}
+
+.category-section h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.5rem;
+}
+
+.category-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-section li {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-section li:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-section li strong {
+  font-size: 1.25rem;
+  color: #1a73e8;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.category-section li em {
+  display: block;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.category-section li .example {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
 /* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
   body {
@@ -276,5 +406,46 @@ p {
   .category-link:hover {
     background-color: #e0e0e0;
     color: #1a73e8;
+  }
+
+  #translation-text {
+    color: #e0e0e0;
+  }
+
+  #translation-text strong {
+    color: #e0e0e0;
+  }
+
+  .glossary-container {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section h2 {
+    color: #1a73e8;
+    border-bottom-color: #1a73e8;
+  }
+
+  .category-section li {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section li:hover {
+    background-color: #3d3d3d;
+  }
+
+  .category-section li strong {
+    color: #1a73e8;
+  }
+
+  .category-section li em {
+    color: #ccc;
+  }
+
+  .category-section li .example {
+    color: #999;
   }
 }
