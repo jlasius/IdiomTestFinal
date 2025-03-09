@@ -1,3 +1,26 @@
+/* Define CSS variables for light mode */
+:root {
+  --background-color: #fff;
+  --text-color: #333;
+  --link-color: #1a73e8; /* Blue for links */
+  --primary-color: #4a90e2; /* Blue for buttons */
+  --primary-hover-color: #357abd; /* Darker blue for button hover */
+  --header-footer-color: #4a90e2; /* Blue for header and footer */
+}
+
+/* Override variables for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --link-color: #4a90e2; /* Light blue for links */
+    --primary-color: #4a90e2; /* Blue for buttons */
+    --primary-hover-color: #357abd; /* Darker blue for button hover */
+    --header-footer-color: #4a90e2; /* Blue for header and footer */
+  }
+}
+
+
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -273,6 +296,8 @@ p {
   text-decoration: underline;
 }
 
+
+
 /* Button Styling */
 .btn-primary {
   background-color: var(--primary-color); /* Blue in light mode */
@@ -290,6 +315,7 @@ p {
   color: white; /* Ensure text stays white on hover */
 }
 
+
 /* Center the button in the column */
 .about-content .btn-primary {
   display: block; /* Make the button a block element */
@@ -305,6 +331,11 @@ p {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   }
 
+  .header-banner {
+    background-color: var(--header-footer-color); /* Ensure header is blue in dark mode */
+  }
+
+  
   .about-content p {
     color: #e0e0e0; /* Light text for dark mode */
   }
