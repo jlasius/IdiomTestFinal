@@ -248,28 +248,72 @@ p {
 }
 
 
-/* Add this to your styles.css file */
+/* Updated about-content styling */
 .about-content {
-  background-color: #fff;
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the content */
+  padding: 2rem; /* Add padding for whitespace */
+  background-color: var(--background-color); /* Use CSS variable for dark mode compatibility */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  padding: 2rem;
 }
 
 .about-content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: var(--text-color); /* Use CSS variable for dark mode compatibility */
+  margin-bottom: 1.5rem; /* Add space between paragraphs */
 }
 
-.btn-lg {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 10px;
+.about-content a {
+  color: var(--link-color); /* Use CSS variable for dark mode compatibility */
+  text-decoration: none;
 }
 
+.about-content a:hover {
+  text-decoration: underline;
+}
 
+.btn-primary {
+  background-color: var(--primary-color); /* Use CSS variable for dark mode compatibility */
+  border-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover-color); /* Use CSS variable for dark mode compatibility */
+  border-color: var(--primary-hover-color);
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .about-content {
+    background-color: #1e1e1e; /* Dark background */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+
+  .about-content p {
+    color: #e0e0e0; /* Light text for dark mode */
+  }
+
+  .about-content a {
+    color: #4a90e2; /* Light blue for links in dark mode */
+  }
+
+  .btn-primary {
+    background-color: #4a90e2; /* Primary button color for dark mode */
+    border-color: #4a90e2;
+  }
+
+  .btn-primary:hover {
+    background-color: #357abd; /* Darker blue for hover in dark mode */
+    border-color: #357abd;
+  }
+}
 
 /* Mascot Styling */
 .mascot-image {
