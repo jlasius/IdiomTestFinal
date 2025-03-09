@@ -247,6 +247,30 @@ p {
   color: #4a90e2;
 }
 
+
+/* Add this to your styles.css file */
+.about-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+
+
 /* Mascot Styling */
 .mascot-image {
   width: 150px;
