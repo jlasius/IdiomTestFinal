@@ -275,8 +275,8 @@ p {
 
 /* Button Styling */
 .btn-primary {
-  background-color: var(--primary-color); /* Blue in light mode */
-  border-color: var(--primary-color);
+  background-color: #4a90e2; /* Blue in light mode */
+  border-color: #4a90e2;
   color: white; /* Always white text */
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
@@ -285,8 +285,8 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-hover-color); /* Darker blue on hover */
-  border-color: var(--primary-hover-color);
+  background-color: #357abd; /* Darker blue on hover */
+  border-color: #357abd;
   color: white; /* Ensure text stays white on hover */
 }
 
@@ -300,27 +300,109 @@ p {
 
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
-  .about-content {
-    background-color: #1e1e1e; /* Dark background */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
   }
 
-  .about-content p {
-    color: #e0e0e0; /* Light text for dark mode */
+  p {
+    color: #e0e0e0; /* Ensure <p> text is light gray */
   }
 
-  .about-content a {
-    color: #4a90e2; /* Light blue for links in dark mode */
+  .header-banner {
+    background-color: #1a73e8; /* Match the footer color in dark mode */
   }
 
+  .card {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .weather-section {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+  }
+
+  .weather-info {
+    color: #e0e0e0;
+  }
+
+  .weather-info img {
+    filter: brightness(1.5) invert(0.1);
+  }
+
+  .clean-list li {
+    border-bottom: 1px solid #444;
+  }
+
+  .footer {
+    background-color: #1a73e8;
+    color: #e0e0e0;
+    border-top-color: #444;
+  }
+
+  .category-link {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+    color: #e0e0e0;
+  }
+
+  .category-link:hover {
+    background-color: #e0e0e0;
+    color: #1a73e8;
+  }
+
+  #translation-text {
+    color: #e0e0e0;
+  }
+
+  #translation-text strong {
+    color: #e0e0e0;
+  }
+
+  .glossary-container {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section h2 {
+    color: #1a73e8;
+    border-bottom-color: #1a73e8;
+  }
+
+  .category-section li {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section li:hover {
+    background-color: #3d3d3d;
+  }
+
+  .category-section li strong {
+    color: #1a73e8;
+  }
+
+  .category-section li em {
+    color: #ccc;
+  }
+
+  .category-section li .example {
+    color: #999;
+  }
+
+  /* Dark mode adjustments for the button */
   .btn-primary {
-    background-color: #4a90e2; /* Primary button color for dark mode */
-    border-color: #4a90e2;
+    background-color: #1a73e8; /* Darker blue in dark mode */
+    border-color: #1a73e8;
   }
 
   .btn-primary:hover {
-    background-color: #357abd; /* Darker blue for hover in dark mode */
-    border-color: #357abd;
+    background-color: #1557a1; /* Even darker blue on hover in dark mode */
+    border-color: #1557a1;
   }
 }
 
@@ -435,97 +517,4 @@ p {
   color: #666;
   font-size: 0.9rem;
   margin-top: 0.5rem;
-}
-
-/* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-
-  p {
-    color: #e0e0e0; /* Ensure <p> text is light gray */
-  }
-
-  .card {
-    background-color: #1e1e1e;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .weather-section {
-    background-color: #2d2d2d;
-    color: #e0e0e0;
-  }
-
-  .weather-info {
-    color: #e0e0e0;
-  }
-
-  .weather-info img {
-    filter: brightness(1.5) invert(0.1);
-  }
-
-  .clean-list li {
-    border-bottom: 1px solid #444;
-  }
-
-  .footer {
-    background-color: #1a73e8;
-    color: #e0e0e0;
-    border-top-color: #444;
-  }
-
-  .category-link {
-    background-color: #1a73e8;
-    border-color: #1a73e8;
-    color: #e0e0e0;
-  }
-
-  .category-link:hover {
-    background-color: #e0e0e0;
-    color: #1a73e8;
-  }
-
-  #translation-text {
-    color: #e0e0e0;
-  }
-
-  #translation-text strong {
-    color: #e0e0e0;
-  }
-
-  .glossary-container {
-    background-color: #1e1e1e;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .category-section h2 {
-    color: #1a73e8;
-    border-bottom-color: #1a73e8;
-  }
-
-  .category-section li {
-    background-color: #2d2d2d;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .category-section li:hover {
-    background-color: #3d3d3d;
-  }
-
-  .category-section li strong {
-    color: #1a73e8;
-  }
-
-  .category-section li em {
-    color: #ccc;
-  }
-
-  .category-section li .example {
-    color: #999;
-  }
 }
