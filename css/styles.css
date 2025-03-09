@@ -317,6 +317,10 @@ p {
   background-color: #1a73e8 !important;
 }
 
+.navbar-collapse {
+  background-color: #1a73e8;
+}
+
 
   
   .card {
