@@ -307,6 +307,17 @@ p {
   color: white; /* Ensure text stays white on hover */
 }
 
+
+/* NEWWW Center the button in the column */
+.about-content .btn-primary {
+  display: block; /* Make the button a block element */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text inside the button */
+  width: fit-content; /* Adjust width to fit content */
+}
+
+
+
 /* Dark mode adjustments for the button */
 @media (prefers-color-scheme: dark) {
   .about-content .btn-primary {
