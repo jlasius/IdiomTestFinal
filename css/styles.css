@@ -1,4 +1,4 @@
- /* General Styles */
+/* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
@@ -264,20 +264,36 @@ p {
   margin-bottom: 1.5rem; /* Add space between paragraphs */
 }
 
+.about-content a {
+  color: var(--link-color); /* Use CSS variable for link color */
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Fix imbuhan link color in light mode */
 .about-content a[href*="imbuhan"] {
-    color: #1a73e8; /* Blue color for light mode */
-    text-decoration: none;
+  color: #1a73e8; /* Blue color for light mode */
+  text-decoration: none;
 }
 
 .about-content a[href*="imbuhan"]:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* Ensure imbuhan link color in dark mode remains blue */
+@media (prefers-color-scheme: dark) {
+  .about-content a[href*="imbuhan"] {
+    color: #4a90e2; /* Light blue for dark mode */
+  }
+}
 
-/* Button Styling */
-.btn-primary {
-  background-color: var(--primary-color); /* Blue in light mode */
-  border-color: var(--primary-color);
+/* Fix "Start Learning Now" button colors */
+.about-content .btn-primary {
+  background-color: #4a90e2; /* Lighter blue for light mode */
+  border-color: #4a90e2;
   color: white; /* Always white text */
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
@@ -285,127 +301,24 @@ p {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-
-.about-content .btn-primary {
-  display: block; /* Make the button a block element */
-  margin: 0 auto; /* Center horizontally */
-  text-align: center; /* Center text inside the button */
-  width: fit-content; /* Adjust width to fit content */
-}
-
-
 .about-content .btn-primary:hover {
-    background-color: #357abd; /* Darker blue for hover in light mode */
-    border-color: #357abd;
-    color: white; /* Ensure text stays white on hover */
-}
-
-
-
-
-/* Fix "Start Learning Now" button colors */
-.about-content .btn-primary {
-    background-color: #4a90e2; /* Lighter blue for light mode */
-    border-color: #4a90e2;
-    color: white; /* Always white text */
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-
-
-
-/*NEWWWWWWW*/
-
-
-
-
-
-
-
-
-
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-  .about-content {
-    background-color: #1e1e1e; /* Dark background */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  }
-
-  .about-content p {
-    color: #e0e0e0; /* Light text for dark mode */
-  }
-
-    .about-content a[href*="imbuhan"] {
-        color: #4a90e2; /* Light blue for dark mode */
-    }
-
-    .about-content .btn-primary {
-        background-color: #1a73e8; /* Darker blue for dark mode */
-        border-color: #1a73e8;
-    }
-
-    .about-content .btn-primary:hover {
-        background-color: #1356a1; /* Even darker blue for hover in dark mode */
-        border-color: #1356a1;
-    }
-  
-}
-
-/* NEEEEEW */
-/* Fix imbuhan link color in light mode */
-.about-content a[href*="imbuhan"] {
-    color: #1a73e8; /* Blue color for light mode */
-    text-decoration: none;
-}
-
-.about-content a[href*="imbuhan"]:hover {
-    text-decoration: underline;
-}
-
-/* Ensure imbuhan link color in dark mode remains blue */
-@media (prefers-color-scheme: dark) {
-    .about-content a[href*="imbuhan"] {
-        color: #4a90e2; /* Light blue for dark mode */
-    }
-}
-
-/* Fix "Start Learning Now" button colors */
-.about-content .btn-primary {
-    background-color: #4a90e2; /* Lighter blue for light mode */
-    border-color: #4a90e2;
-    color: white; /* Always white text */
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.about-content .btn-primary:hover {
-    background-color: #357abd; /* Darker blue for hover in light mode */
-    border-color: #357abd;
-    color: white; /* Ensure text stays white on hover */
+  background-color: #357abd; /* Darker blue for hover in light mode */
+  border-color: #357abd;
+  color: white; /* Ensure text stays white on hover */
 }
 
 /* Dark mode adjustments for the button */
 @media (prefers-color-scheme: dark) {
-    .about-content .btn-primary {
-        background-color: #1a73e8; /* Darker blue for dark mode */
-        border-color: #1a73e8;
-    }
+  .about-content .btn-primary {
+    background-color: #1a73e8; /* Darker blue for dark mode */
+    border-color: #1a73e8;
+  }
 
-    .about-content .btn-primary:hover {
-        background-color: #1356a1; /* Even darker blue for hover in dark mode */
-        border-color: #1356a1;
-    }
+  .about-content .btn-primary:hover {
+    background-color: #1356a1; /* Even darker blue for hover in dark mode */
+    border-color: #1356a1;
+  }
 }
-
-/*NEWWW END*/
-
-
-
 
 /* Mascot Styling */
 .mascot-image {
@@ -554,20 +467,19 @@ p {
     border-bottom: 1px solid #444;
   }
 
-
   /* new */
-.header-banner {
+  .header-banner {
     background-color: #1a73e8; /* Ensure header is blue in dark mode */
   }
 
-.navbar-collapse {
-  background-color: #1a73e8;
-}
+  .navbar-collapse {
+    background-color: #1a73e8;
+  }
 
-.navbar {
+  .navbar {
     background-color: #1a73e8 !important;
-}
-  
+  }
+
   .footer {
     background-color: #1a73e8;
     color: #e0e0e0;
@@ -626,4 +538,3 @@ p {
     color: #999;
   }
 }
-
