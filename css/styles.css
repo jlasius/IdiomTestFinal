@@ -477,6 +477,13 @@ p {
     background-color: #1a73e8; /* Ensure header is blue in dark mode */
   }
 
+.navbar-collapse {
+  background-color: #1a73e8;
+}
+
+.navbar {
+    background-color: #1a73e8 !important;
+}
   
   .footer {
     background-color: #1a73e8;
