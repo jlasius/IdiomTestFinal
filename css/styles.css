@@ -264,14 +264,6 @@ p {
   margin-bottom: 1.5rem; /* Add space between paragraphs */
 }
 
-.about-content a {
-  color: var(--link-color); /* Use CSS variable for link color */
-  text-decoration: none;
-}
-
-.about-content a:hover {
-  text-decoration: underline;
-}
 
 /* Fix imbuhan link color in light mode */
 .about-content a[href*="imbuhan"] {
@@ -289,6 +281,7 @@ p {
     color: #4a90e2; /* Light blue for dark mode */
   }
 }
+
 
 /* Fix "Start Learning Now" button colors */
 .about-content .btn-primary {
