@@ -265,9 +265,10 @@ p {
 }
 
 .about-content a {
-  color: var(--link-color); /* Use CSS variable for link color */
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));  /* Use CSS variable for link color */
   text-decoration: none;
 }
+
 
 .about-content a:hover {
   text-decoration: underline;
