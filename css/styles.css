@@ -471,6 +471,13 @@ p {
     border-bottom: 1px solid #444;
   }
 
+
+  /* new */
+.header-banner {
+    background-color: #1a73e8; /* Ensure header is blue in dark mode */
+  }
+
+  
   .footer {
     background-color: #1a73e8;
     color: #e0e0e0;
