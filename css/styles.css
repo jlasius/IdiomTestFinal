@@ -1,4 +1,4 @@
-/* General Styles */
+ /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
@@ -264,10 +264,8 @@ p {
   margin-bottom: 1.5rem; /* Add space between paragraphs */
 }
 
-
-/* Ensure the imbuhan link is blue in light mode */
 .about-content a {
-  color: #1a73e8; /* Blue color for links */
+  color: var(--link-color); /* Use CSS variable for link color */
   text-decoration: none;
 }
 
@@ -275,34 +273,10 @@ p {
   text-decoration: underline;
 }
 
-/* Dark mode adjustments for the imbuhan link */
-@media (prefers-color-scheme: dark) {
-  .about-content a {
-    color: #4a90e2; /* Light blue for dark mode */
-  }
-
-  .about-content a:hover {
-    color: #357abd; /* Slightly darker blue on hover in dark mode */
-  }
-}
-
-
-
-
-/* Button Styling */
-
-
-.btn-primary:hover {
-  background-color: #357abd; /* Darker blue on hover */
-  border-color: #357abd;
-  color: white; /* Ensure text stays white on hover */
-}
-
-
 /* Button Styling */
 .btn-primary {
-  background-color: #4a90e2; /* Blue in light mode */
-  border-color: #4a90e2;
+  background-color: var(--primary-color); /* Blue in light mode */
+  border-color: var(--primary-color);
   color: white; /* Always white text */
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
@@ -310,24 +284,11 @@ p {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-
-/* Dark mode adjustments for the button */
-@media (prefers-color-scheme: dark) {
-  .btn-primary {
-    background-color: #1a73e8; /* Darker blue in dark mode */
-    border-color: #1a73e8;
-    color: white; /* Ensure text stays white in dark mode */
-  }
-
-  .btn-primary:hover {
-    background-color: #1557a1; /* Even darker blue on hover in dark mode */
-    border-color: #1557a1;
-    color: white; /* Ensure text stays white on hover */
-  }
+.btn-primary:hover {
+  background-color: var(--primary-hover-color); /* Darker blue on hover */
+  border-color: var(--primary-hover-color);
+  color: white; /* Ensure text stays white on hover */
 }
-
-
-
 
 /* Center the button in the column */
 .about-content .btn-primary {
@@ -339,119 +300,27 @@ p {
 
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: white;
+  .about-content {
+    background-color: #1e1e1e; /* Dark background */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   }
 
-  p {
-    color: #e0e0e0; /* Ensure <p> text is light gray */
+  .about-content p {
+    color: #e0e0e0; /* Light text for dark mode */
   }
 
-  .header-banner {
-    background-color: #1a73e8; /* Match the footer color in dark mode */
+  .about-content a {
+    color: #4a90e2; /* Light blue for links in dark mode */
   }
 
-.navbar {
-  background-color: #1a73e8 !important;
-}
-
-.navbar-collapse {
-  background-color: #1a73e8;
-}
-
-
-  
-  .card {
-    background-color: #1e1e1e;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .weather-section {
-    background-color: #2d2d2d;
-    color: #e0e0e0;
-  }
-
-  .weather-info {
-    color: #e0e0e0;
-  }
-
-  .weather-info img {
-    filter: brightness(1.5) invert(0.1);
-  }
-
-  .clean-list li {
-    border-bottom: 1px solid #444;
-  }
-
-  .footer {
-    background-color: #1a73e8;
-    color: #e0e0e0;
-    border-top-color: #444;
-  }
-
-  .category-link {
-    background-color: #1a73e8;
-    border-color: #1a73e8;
-    color: #e0e0e0;
-  }
-
-  .category-link:hover {
-    background-color: #e0e0e0;
-    color: #1a73e8;
-  }
-
-  #translation-text {
-    color: #e0e0e0;
-  }
-
-  #translation-text strong {
-    color: #e0e0e0;
-  }
-
-  .glossary-container {
-    background-color: #1e1e1e;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .category-section h2 {
-    color: #1a73e8;
-    border-bottom-color: #1a73e8;
-  }
-
-  .category-section li {
-    background-color: #2d2d2d;
-    border-color: #444;
-    color: #e0e0e0;
-  }
-
-  .category-section li:hover {
-    background-color: #3d3d3d;
-  }
-
-  .category-section li strong {
-    color: #1a73e8;
-  }
-
-  .category-section li em {
-    color: #ccc;
-  }
-
-  .category-section li .example {
-    color: #999;
-  }
-
-  /* Dark mode adjustments for the button */
   .btn-primary {
-    background-color: #1a73e8; /* Darker blue in dark mode */
-    border-color: #1a73e8;
+    background-color: #4a90e2; /* Primary button color for dark mode */
+    border-color: #4a90e2;
   }
 
   .btn-primary:hover {
-    background-color: #1557a1; /* Even darker blue on hover in dark mode */
-    border-color: #1557a1;
+    background-color: #357abd; /* Darker blue for hover in dark mode */
+    border-color: #357abd;
   }
 }
 
@@ -567,3 +436,97 @@ p {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  p {
+    color: #e0e0e0; /* Ensure <p> text is light gray */
+  }
+
+  .card {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .weather-section {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+  }
+
+  .weather-info {
+    color: #e0e0e0;
+  }
+
+  .weather-info img {
+    filter: brightness(1.5) invert(0.1);
+  }
+
+  .clean-list li {
+    border-bottom: 1px solid #444;
+  }
+
+  .footer {
+    background-color: #1a73e8;
+    color: #e0e0e0;
+    border-top-color: #444;
+  }
+
+  .category-link {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+    color: #e0e0e0;
+  }
+
+  .category-link:hover {
+    background-color: #e0e0e0;
+    color: #1a73e8;
+  }
+
+  #translation-text {
+    color: #e0e0e0;
+  }
+
+  #translation-text strong {
+    color: #e0e0e0;
+  }
+
+  .glossary-container {
+    background-color: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section h2 {
+    color: #1a73e8;
+    border-bottom-color: #1a73e8;
+  }
+
+  .category-section li {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .category-section li:hover {
+    background-color: #3d3d3d;
+  }
+
+  .category-section li strong {
+    color: #1a73e8;
+  }
+
+  .category-section li em {
+    color: #ccc;
+  }
+
+  .category-section li .example {
+    color: #999;
+  }
+}
+
