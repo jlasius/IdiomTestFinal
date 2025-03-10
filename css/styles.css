@@ -264,15 +264,40 @@ p {
   margin-bottom: 1.5rem; /* Add space between paragraphs */
 }
 
+
+/* Ensure the imbuhan link is blue in light mode */
 .about-content a {
-  color: var(--link-color); /* Use CSS variable for link color */
+  color: #1a73e8; /* Blue color for links */
   text-decoration: none;
 }
-
 
 .about-content a:hover {
   text-decoration: underline;
 }
+
+/* Dark mode adjustments for the imbuhan link */
+@media (prefers-color-scheme: dark) {
+  .about-content a {
+    color: #4a90e2; /* Light blue for dark mode */
+  }
+
+  .about-content a:hover {
+    color: #357abd; /* Slightly darker blue on hover in dark mode */
+  }
+}
+
+
+
+
+/* Button Styling */
+
+
+.btn-primary:hover {
+  background-color: #357abd; /* Darker blue on hover */
+  border-color: #357abd;
+  color: white; /* Ensure text stays white on hover */
+}
+
 
 /* Button Styling */
 .btn-primary {
@@ -285,11 +310,24 @@ p {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #357abd; /* Darker blue on hover */
-  border-color: #357abd;
-  color: white; /* Ensure text stays white on hover */
+
+/* Dark mode adjustments for the button */
+@media (prefers-color-scheme: dark) {
+  .btn-primary {
+    background-color: #1a73e8; /* Darker blue in dark mode */
+    border-color: #1a73e8;
+    color: white; /* Ensure text stays white in dark mode */
+  }
+
+  .btn-primary:hover {
+    background-color: #1557a1; /* Even darker blue on hover in dark mode */
+    border-color: #1557a1;
+    color: white; /* Ensure text stays white on hover */
+  }
 }
+
+
+
 
 /* Center the button in the column */
 .about-content .btn-primary {
