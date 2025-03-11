@@ -12,6 +12,15 @@
             "English": "She felt overjoyed when she received the gift."
           }
         },
+       {
+    "idiom": "Buah hati",
+    "translation": "Apple of the eye.",
+    "explanation": "Refers to someone who is very dear or precious to you, often a loved one or child.",
+    "example": {
+      "BM": "Anak kecil itu adalah buah hati keluarganya.",
+      "English": "The little child is the apple of the family's eye."
+        }
+      },  
         {
           "idiom": "Hati berat",
           "translation": "Heavy heart.",
@@ -84,6 +93,15 @@
             "English": "His heart was wounded because he was betrayed by his best friend."
         }
     },
+        {
+    "idiom": "Makan hati",
+    "translation": "Eat liver.",
+    "explanation": "Feeling hurt, upset, or emotionally distressed.",
+    "example": {
+      "BM": "Dia makan hati kerana ditinggalkan oleh kekasihnya.",
+      "English": "She felt hurt because she was left by her lover."
+    }
+  },
     {
         "idiom": "Rasa hati",
         "translation": "Feeling of the heart.",
@@ -188,6 +206,15 @@
             "English": "Don’t be lazy; help clean up this room."
           }
         },
+         {
+    "idiom": "Cuba dulu yang",
+    "translation": "Try the first one.",
+    "explanation": "Encourages someone to try something first before making a decision or judgment.",
+    "example": {
+      "BM": "Cuba dulu yang baru sebelum membuat keputusan.",
+      "English": "Try the new one first before making a decision."
+    }
+  },
     {
       "idiom": "Mendapat durian runtuh",
       "translation": "Getting a windfall.",
@@ -849,6 +876,15 @@
             "English": "He seems quiet, but still waters run deep."
           }
         },
+        {
+    "idiom": "Asam garam",
+    "translation": "Salt and sour.",
+    "explanation": "Refers to the ups and downs or challenges experienced in life.",
+    "example": {
+      "BM": "Dia telah melalui asam garam hidup sebelum berjaya.",
+      "English": "He went through the salt and sour of life before succeeding."
+    }
+  },
           {
               "idiom": "Biarpun sepandai-pandai tupai melompat, sekali-sekala jatuh juga",
               "translation": "No matter how clever a squirrel is at jumping, it will still fall sometimes.",
@@ -929,7 +965,16 @@
                   "BM": "Jangan malu bertanya, malu bertanya sesat jalan.",
                   "English": "Don’t be shy to ask; asking for help is better than failing."
               }
-          }
+          },
+            {
+    "idiom": "Masuk bakul angkat sendiri",
+    "translation": "Put into the basket and carry it yourself.",
+    "explanation": "Refers to taking responsibility for one's own actions or decisions.",
+    "example": {
+      "BM": "Jika kamu membuat keputusan itu, kamu harus masuk bakul angkat sendiri.",
+      "English": "If you make that decision, you must put it into the basket and carry it yourself."
+    }
+  }
             ]
     },
     {
@@ -953,6 +998,15 @@
             "English": "In a family, we must share responsibilities equally."
           }
         },
+         {
+    "idiom": "Bidan terjun",
+    "translation": "Midwife jumps.",
+    "explanation": "Refers to someone who takes on a task or responsibility without proper preparation or expertise.",
+    "example": {
+      "BM": "Dia seperti bidan terjun ketika mencuba memperbaiki kereta itu.",
+      "English": "He was like a midwife jumping in when trying to fix the car."
+        }
+      },
           {
               "idiom": "Genggam bara api biar sampai jadi arang",
               "translation": "Hold the ember until it turns to charcoal.",
