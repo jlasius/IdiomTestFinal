@@ -357,6 +357,41 @@ p {
   color: #333;
 }
 
+
+
+/* PHOTO START */
+
+.credits-section {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+}
+
+.credits-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.credits-section ul {
+  padding-left: 1em;
+}
+
+.credits-section a {
+  color: #666;
+  text-decoration: none;
+}
+
+.credits-section a:hover {
+  text-decoration: underline;
+}
+
+/* PHOTO END */
+
+
+
+
 /* Back Button in Flashcards */
 .back-button {
   background-color: transparent;
@@ -471,7 +506,7 @@ p {
     border-bottom: 1px solid #444;
   }
 
-  /* new */
+
   .header-banner {
     background-color: #1a73e8; /* Ensure header is blue in dark mode */
   }
